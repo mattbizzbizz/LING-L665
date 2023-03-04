@@ -30,14 +30,14 @@ def cleanTweet(tweet):
     return clean_tweet
 
 # %%
-train_df = pd.read_csv('C:\\Users\\Jerem\\Desktop\\assignment-5\\Data\\train.txt', encoding='utf8', sep='\t')
+train_df = pd.read_csv('./train.txt', encoding='utf8', sep='\t')
 train_df.columns = ['tweet','label']
 
 
-test_df = pd.read_csv('C:\\Users\\Jerem\\Desktop\\assignment-5\\Data\\test.txt', encoding='utf8', sep='\t')
+test_df = pd.read_csv('./test.txt', encoding='utf8', sep='\t')
 test_df.columns = ['tweet','label']
 
-validate_df = pd.read_csv('C:\\Users\\Jerem\\Desktop\\assignment-5\\Data\\validate.txt', encoding='utf8', sep='\t')
+validate_df = pd.read_csv('./validate.txt', encoding='utf8', sep='\t')
 validate_df.columns = ['tweet','label']
 
 # %%
