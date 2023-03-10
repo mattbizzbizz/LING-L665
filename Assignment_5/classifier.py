@@ -52,7 +52,7 @@ X_test = [cleanTweet(tweet) for tweet in X_test]
 
 # %%
 # create TF-IDF vectorizer with n-grams
-tfidf = TfidfVectorizer(ngram_range=(2, 2), analyzer='char')
+tfidf = TfidfVectorizer(ngram_range=(1, 2), analyzer='word')
 
 # fit and transform the training data
 X_train_tfidf = tfidf.fit_transform(X_train)
@@ -72,5 +72,3 @@ print('Accuracy:', accuracy*100)
 
 # print classification report
 print(classification_report(Y_test, y_pred))
-
-

@@ -40,7 +40,6 @@ df = pd.read_json('./EXIST2023_training.json', encoding='utf8', orient = 'index'
 X_train = df['tweet'].to_list()
 Y_train = ['YES' if labels.count('YES') > 3 else 'NO' if labels.count('NO') < 3 else 'UNCLEAR' for labels in df['labels_task1'].to_list()]
 X_train_new = [cleanTweet(tweet) for tweet in X_train]
-print(X_train_new)
 
 # %%
 # create TF-IDF vectorizer with n-grams

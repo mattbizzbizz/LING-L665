@@ -1,0 +1,11 @@
+Accuracy: 76.19350732017823
+              precision    recall  f1-score   support
+
+        none       0.75      0.98      0.85      1076
+      racism       0.82      0.19      0.31       190
+      sexism       0.90      0.34      0.50       305
+
+    accuracy                           0.76      1571
+   macro avg       0.82      0.50      0.55      1571
+weighted avg       0.79      0.76      0.72      1571
+
