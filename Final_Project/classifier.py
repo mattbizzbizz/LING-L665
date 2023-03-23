@@ -9,47 +9,21 @@ from nltk.tokenize import word_tokenize
 from nltk.tokenize.casual import TweetTokenizer
 
 import unicodedata
-from emoji import EMOJI_DATA
-
-def is_emoji(s):
-    return s in EMOJI_DATA
-
-# %%
-def cleanTweet(tweet, lang):
-
-    clean_tweet = tweet.lower() # Make tweet all lowercase
-
-    clean_tweet = re.sub("@[A-Za-z0-9_]+", '', clean_tweet) # Remove usernames
-    clean_tweet = re.sub("\"", "", clean_tweet) # Remove double-quotes
-    clean_tweet = re.sub("http[://\/-zA-Z0-9_=+.$@#$%^&*()]+", '', clean_tweet) # Remove links
-    
-    clean_tweet = ' '.join(word_tokenize(clean_tweet, language = lang)) # Tokenise tweet
-
-    clean_tweet = re.sub("\'", "APOS", clean_tweet) # Change apostrophes to a tag
-    clean_tweet = re.sub(" %", "PERC", clean_tweet) # Change percent signs to a tag
-    
-    clean_tweet = re.sub("[^\w\s]", '', clean_tweet) # Remove punctuation
-
-    clean_tweet = re.sub('APOS', "\'", clean_tweet) # Change apostrophe tag back to apostrophes
-    clean_tweet = re.sub("PERC", "%", clean_tweet) # Change percent sign tags back to percent signs
-
-    clean_tweet = re.sub(" +", " ", clean_tweet) # Remove double-spaces
-    clean_tweet = re.sub(" n't", "n't",  clean_tweet) # Convert n't to not
-    clean_tweet = re.sub(" 's", "'s",  clean_tweet) # Merge 's back into the previous word
-
-    
-    return clean_tweet
+import emoji
 
 def cleanTweet_TweetTokenizer(tweet):
 
     clean_tweet = re.sub("http[://\/-zA-Z0-9_=+.$@#$%^&*()]+", '', tweet) # Remove links
 
-    clean_tweet = re.sub(r'[.]', ' . ', clean_tweet)
+    clean_tweet = re.sub(r'[.]', ' . ', clean_tweet) # Add spaces around periods
 
-    clean_tweet = re.sub(r"([a-z])`s", "\g<1>'s", clean_tweet)
-    clean_tweet = re.sub(r'`', '', clean_tweet)
+    clean_tweet = re.sub(r"([a-z])[´`]([a-z])", "\g<1>'\g<2>", clean_tweet) # Convert ´ and ` when surrounded by letters
+    clean_tweet = re.sub(r'[´`^¨~]', '', clean_tweet) # Remove special characters
 
     clean_tweet = ' '.join(TweetTokenizer(strip_handles = True, reduce_len = True, preserve_case = False).tokenize(clean_tweet)) # Tokenise tweet
+
+    clean_tweet = re.sub(r'<3', emoji.emojize(':red_heart:'), clean_tweet) # Convert <3 into an emoji
+    clean_tweet = re.sub(r'[<>]', '', clean_tweet) # Remove < and >
 
     print(f'Original Tweet: {tweet}\nCleaned Tweet: {clean_tweet}\n')
 
@@ -62,8 +36,7 @@ df = pd.read_json('./EXIST2023_training.json', encoding='utf8', orient = 'index'
 X_train = df['tweet'].to_list()
 X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in df['lang'].to_list()] # Change language labels to full name
 Y_train = ['YES' if labels.count('YES') > 3 else 'NO' for labels in df['labels_task1'].to_list()] # Label as sexism if 3 or more annotators label the tweet as sexism
-X_train_new = [cleanTweet(tweet, lang) for tweet, lang in zip(X_train, X_train_lang)]
-X_train_new2 = [cleanTweet_TweetTokenizer(tweet) for tweet in X_train]
+X_train_new = [cleanTweet_TweetTokenizer(tweet) for tweet in X_train]
 
 ## %%
 ## create TF-IDF vectorizer with n-grams

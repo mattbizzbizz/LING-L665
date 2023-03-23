@@ -1,12 +1,12 @@
-´
-`
-^
-¨
-~
-≠
-<
-=
->
+´ # Acts as apostrophe in some cases
+` # Acts as apostrophe in some cases
+^ # Removed
+¨ # Removed - acts as quotation marks
+~ # Removed
+≠ # Kept
+< # Removed - shows up again after TweetTokenizer is run in the form of <3 (it was &lt;3 in the original tweet)
+= # Kept
+> # Removed - show up as &gt; before TweetTokenizer is run
 |
 °
 ─
