@@ -7,7 +7,7 @@
 < # Removed - shows up again after TweetTokenizer is run in the form of <3 (it was &lt;3 in the original tweet)
 = # Kept
 > # Removed - show up as &gt; before TweetTokenizer is run
-|
+| # Removed
 °
 ─
  

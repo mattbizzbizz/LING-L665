@@ -13,17 +13,21 @@ import emoji
 
 def cleanTweet_TweetTokenizer(tweet):
 
-    clean_tweet = re.sub("http[://\/-zA-Z0-9_=+.$@#$%^&*()]+", '', tweet) # Remove links
-
     clean_tweet = re.sub(r'[.]', ' . ', clean_tweet) # Add spaces around periods
 
-    clean_tweet = re.sub(r"([a-z])[´`]([a-z])", "\g<1>'\g<2>", clean_tweet) # Convert ´ and ` when surrounded by letters
-    clean_tweet = re.sub(r'[´`^¨~]', '', clean_tweet) # Remove special characters
+    clean_tweet = re.sub(r"([a-zA-Z])[´`]([a-zA-Z])", "\g<1>'\g<2>", clean_tweet) # Convert ´ and ` when surrounded by letters
+    clean_tweet = re.sub(r'[´`^¨~|]', '', clean_tweet) # Remove special characters
 
-    clean_tweet = ' '.join(TweetTokenizer(strip_handles = True, reduce_len = True, preserve_case = False).tokenize(clean_tweet)) # Tokenise tweet
+    clean_tweet = ' '.join(TweetTokenizer(strip_handles = False, reduce_len = True, preserve_case = False).tokenize(clean_tweet)) # Tokenise tweet
+
+    #clean_tweet = re.sub(r'@[a-z_]+', '<USERNAME>', clean_tweet)
 
     clean_tweet = re.sub(r'<3', emoji.emojize(':red_heart:'), clean_tweet) # Convert <3 into an emoji
     clean_tweet = re.sub(r'[<>]', '', clean_tweet) # Remove < and >
+
+    clean_tweet = re.sub("http[^\s]+", '', tweet) # Remove links
+
+    clean_tweet = re.sub(r'@[^\s]+', '<USERNAME>', clean_tweet) # Replace usernames with <USERNAME>
 
     print(f'Original Tweet: {tweet}\nCleaned Tweet: {clean_tweet}\n')
 
