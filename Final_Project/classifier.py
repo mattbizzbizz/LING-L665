@@ -40,11 +40,26 @@ df = pd.read_json('./EXIST2023_training.json', encoding='utf8', orient = 'index'
 X_train = df['tweet'].to_list()
 X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in df['lang'].to_list()] # Change language labels to full name
 Y_train = ['YES' if labels.count('YES') > 3 else 'NO' for labels in df['labels_task1'].to_list()] # Label as sexism if 3 or more annotators label the tweet as sexism
-X_train_new = [cleanTweet(tweet) for tweet in X_train]
+X_train_clean = [cleanTweet(tweet) for tweet in X_train]
 
+X_train_spanish = []
+X_train_english = []
 
-with open('tokenizer.pkl', 'wb') as fd:
-    pickle.dump(X_train_new, fd)
+for i, lang in enumerate(X_train_lang):
+    if lang == 'english':
+        X_train_english.append(X_train_clean[i])
+    elif lang == 'spanish':
+        X_train_spanish.append(X_train_clean[i])
+    else:
+        print("Invalid language name in X_train_lang.")
+        exit()
+
+with open('tokenizer_english.pkl', 'wb') as fd:
+    pickle.dump(X_train_english, fd)
+
+with open('tokenizer_spanish.pkl', 'wb') as fd:
+    pickle.dump(X_train_spanish, fd)
+
 
 ## %%
 ## create TF-IDF vectorizer with n-grams
