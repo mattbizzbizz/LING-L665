@@ -14,7 +14,7 @@ import emoji
 
 def cleanTweet(tweet):
 
-    clean_tweet = re.sub(r'https://[a-zA-Z]+', '', tweet) # Remove links
+    clean_tweet = re.sub(r'https://[a-zA-Z0-9/.]+', '', tweet) # Remove links
 
     clean_tweet = re.sub(r'[.]', ' . ', clean_tweet) # Add spaces around periods
 
