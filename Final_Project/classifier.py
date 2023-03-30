@@ -12,6 +12,8 @@ from TweetTokenizer_modified import TweetTokenizer
 import unicodedata
 import emoji
 
+import pickle
+
 def cleanTweet(tweet):
 
     clean_tweet = re.sub(r'https://[a-zA-Z0-9/.]+', '', tweet) # Remove links
@@ -28,7 +30,6 @@ def cleanTweet(tweet):
     clean_tweet = re.sub(r'[<>]', '', clean_tweet) # Remove < and >
 
     #print(f'Original Tweet: {tweet}\nCleaned Tweet: {clean_tweet}\n')
-    print(clean_tweet)
 
     return clean_tweet
 
@@ -40,6 +41,10 @@ X_train = df['tweet'].to_list()
 X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in df['lang'].to_list()] # Change language labels to full name
 Y_train = ['YES' if labels.count('YES') > 3 else 'NO' for labels in df['labels_task1'].to_list()] # Label as sexism if 3 or more annotators label the tweet as sexism
 X_train_new = [cleanTweet(tweet) for tweet in X_train]
+
+
+with open('tokenizer.pkl', 'wb') as fd:
+    pickle.dump(X_train_new, fd)
 
 ## %%
 ## create TF-IDF vectorizer with n-grams
