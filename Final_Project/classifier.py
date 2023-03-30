@@ -6,30 +6,29 @@ import pandas as pd
 # from sklearn.metrics import accuracy_score, classification_report
 import re
 from nltk.tokenize import word_tokenize
-from nltk.tokenize.casual import TweetTokenizer
+#from nltk.tokenize.casual import TweetTokenizer
+from TweetTokenizer_modified import TweetTokenizer
 
 import unicodedata
 import emoji
 
-def cleanTweet_TweetTokenizer(tweet):
+def cleanTweet(tweet):
+
+    clean_tweet = re.sub(r'https://[a-zA-Z]+', '', tweet) # Remove links
 
     clean_tweet = re.sub(r'[.]', ' . ', clean_tweet) # Add spaces around periods
 
     clean_tweet = re.sub(r"([a-zA-Z])[´`]([a-zA-Z])", "\g<1>'\g<2>", clean_tweet) # Convert ´ and ` when surrounded by letters
-    clean_tweet = re.sub(r'[´`^¨~|]', '', clean_tweet) # Remove special characters
+    clean_tweet = re.sub(r'([0-9])°', '\g<1> degrees', clean_tweet) # Convert ° into the word 'degrees' when directly after a number
+    clean_tweet = re.sub(r'[´`^¨~°|─­]', '', clean_tweet) # Remove special characters
 
-    clean_tweet = ' '.join(TweetTokenizer(strip_handles = False, reduce_len = True, preserve_case = False).tokenize(clean_tweet)) # Tokenise tweet
-
-    #clean_tweet = re.sub(r'@[a-z_]+', '<USERNAME>', clean_tweet)
+    clean_tweet = ' '.join(TweetTokenizer(strip_handles = True, reduce_len = True, preserve_case = False).tokenize(clean_tweet)) # Tokenise tweet
 
     clean_tweet = re.sub(r'<3', emoji.emojize(':red_heart:'), clean_tweet) # Convert <3 into an emoji
     clean_tweet = re.sub(r'[<>]', '', clean_tweet) # Remove < and >
 
-    clean_tweet = re.sub("http[^\s]+", '', tweet) # Remove links
-
-    clean_tweet = re.sub(r'@[^\s]+', '<USERNAME>', clean_tweet) # Replace usernames with <USERNAME>
-
-    print(f'Original Tweet: {tweet}\nCleaned Tweet: {clean_tweet}\n')
+    #print(f'Original Tweet: {tweet}\nCleaned Tweet: {clean_tweet}\n')
+    print(clean_tweet)
 
     return clean_tweet
 
@@ -40,7 +39,7 @@ df = pd.read_json('./EXIST2023_training.json', encoding='utf8', orient = 'index'
 X_train = df['tweet'].to_list()
 X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in df['lang'].to_list()] # Change language labels to full name
 Y_train = ['YES' if labels.count('YES') > 3 else 'NO' for labels in df['labels_task1'].to_list()] # Label as sexism if 3 or more annotators label the tweet as sexism
-X_train_new = [cleanTweet_TweetTokenizer(tweet) for tweet in X_train]
+X_train_new = [cleanTweet(tweet) for tweet in X_train]
 
 ## %%
 ## create TF-IDF vectorizer with n-grams
