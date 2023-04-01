@@ -433,7 +433,7 @@ def replace_handles(text):
     Replace Twitter username handles from text with 'username'.
     """
     # Substitute handles with ' username ' to ensure that text on either side of removed handles are tokenized correctly
-    return HANDLES_RE.sub(" username ", text)
+    return HANDLES_RE.sub(" usernameidentificationtag ", text)
 
 
 

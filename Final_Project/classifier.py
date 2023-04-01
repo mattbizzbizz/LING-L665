@@ -14,6 +14,35 @@ import emoji
 
 import pickle
 
+# Remove duplicated <USERNAME> tags
+#     Return cleaned tweet and count of <USERNAME> tags
+def remove_duplicate_usernames(tweet):
+ 
+    # Split input string separated by space
+    tweet = tweet.split(" ")
+
+    username = False # Bool for whether there is a <USERNAME> in the tweet
+    username_count = 1 # Count of usernames
+    clean_tweet = '' # Tweet with multiple <USERNAME>s removed
+
+    # Iterate through words in tweet
+    for word in tweet:
+
+        # Check if word is a username
+        #     If it is not, add word to clean_tweet
+        if word == "<USERNAME>":
+
+            # Increment username_count if 2+ username were present
+            #     otherwise, add username to clean_tweet and set username bool to True
+            if username: username_count += 1
+            else:
+                clean_tweet = ' '.join(word)
+                username = True
+
+        else: clean_tweet = ' '.join(word)
+
+    return clean_tweet, username_count
+
 def cleanTweet(tweet):
 
     clean_tweet = re.sub(r'https://[a-zA-Z0-9/.]+', '', tweet) # Remove links
@@ -29,9 +58,13 @@ def cleanTweet(tweet):
     clean_tweet = re.sub(r'<3', emoji.emojize(':red_heart:'), clean_tweet) # Convert <3 into an emoji
     clean_tweet = re.sub(r'[<>]', '', clean_tweet) # Remove < and >
 
+    clean_tweet = re.sub(r'usernameidentificationtag', '<USERNAME>', clean_tweet)
+
+    clean_tweet, username_count = remove_duplicate_usernames(clean_tweet)
+
     #print(f'Original Tweet: {tweet}\nCleaned Tweet: {clean_tweet}\n')
 
-    return clean_tweet
+    return clean_tweet, username_count
 
 # %%
 df = pd.read_json('./EXIST2023_training.json', encoding='utf8', orient = 'index')
@@ -40,45 +73,47 @@ df = pd.read_json('./EXIST2023_training.json', encoding='utf8', orient = 'index'
 X_train = df['tweet'].to_list()
 X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in df['lang'].to_list()] # Change language labels to full name
 Y_train = ['YES' if labels.count('YES') > 3 else 'NO' for labels in df['labels_task1'].to_list()] # Label as sexism if 3 or more annotators label the tweet as sexism
-X_train_clean = [cleanTweet(tweet) for tweet in X_train]
+X_train_clean, X_train_username_counts = zip(*[cleanTweet(tweet) for tweet in X_train])
 
-X_train_spanish = []
-X_train_english = []
-Y_train_spanish_majority = []
-Y_train_english_majority = []
-Y_train_spanish = []
-Y_train_english = []
+print(X_train_username_counts)
 
-for i, lang in enumerate(X_train_lang):
-    if lang == 'english':
-        X_train_english.append(X_train_clean[i])
-        Y_train_english_majority.append(Y_train[i])
-        Y_train_english.append(df['labels_task1'].to_list()[i])
-    elif lang == 'spanish':
-        X_train_spanish.append(X_train_clean[i])
-        Y_train_spanish_majority.append(Y_train[i])
-        Y_train_spanish.append(df['labels_task1'].to_list()[i])
-    else:
-        print("Invalid language name in X_train_lang.")
-        exit()
-
-with open('tokenizer_english.pkl', 'wb') as fd:
-    pickle.dump(X_train_english, fd)
-
-with open('tokenizer_spanish.pkl', 'wb') as fd:
-    pickle.dump(X_train_spanish, fd)
-
-with open('tokenizer_english_labels_majority.pkl', 'wb') as fd:
-    pickle.dump(Y_train_english_majority, fd)
-
-with open('tokenizer_spanish_labels_majority.pkl', 'wb') as fd:
-    pickle.dump(Y_train_spanish_majority, fd)
-
-with open('tokenizer_english_labels.pkl', 'wb') as fd:
-    pickle.dump(Y_train_english, fd)
-
-with open('tokenizer_spanish_labels.pkl', 'wb') as fd:
-    pickle.dump(Y_train_spanish, fd)
+#X_train_spanish = []
+#X_train_english = []
+#Y_train_spanish_majority = []
+#Y_train_english_majority = []
+#Y_train_spanish = []
+#Y_train_english = []
+#
+#for i, lang in enumerate(X_train_lang):
+#    if lang == 'english':
+#        X_train_english.append(X_train_clean[i])
+#        Y_train_english_majority.append(Y_train[i])
+#        Y_train_english.append(df['labels_task1'].to_list()[i])
+#    elif lang == 'spanish':
+#        X_train_spanish.append(X_train_clean[i])
+#        Y_train_spanish_majority.append(Y_train[i])
+#        Y_train_spanish.append(df['labels_task1'].to_list()[i])
+#    else:
+#        print("Invalid language name in X_train_lang.")
+#        exit()
+#
+#with open('tokenizer_english.pkl', 'wb') as fd:
+#    pickle.dump(X_train_english, fd)
+#
+#with open('tokenizer_spanish.pkl', 'wb') as fd:
+#    pickle.dump(X_train_spanish, fd)
+#
+#with open('tokenizer_english_labels_majority.pkl', 'wb') as fd:
+#    pickle.dump(Y_train_english_majority, fd)
+#
+#with open('tokenizer_spanish_labels_majority.pkl', 'wb') as fd:
+#    pickle.dump(Y_train_spanish_majority, fd)
+#
+#with open('tokenizer_english_labels.pkl', 'wb') as fd:
+#    pickle.dump(Y_train_english, fd)
+#
+#with open('tokenizer_spanish_labels.pkl', 'wb') as fd:
+#    pickle.dump(Y_train_spanish, fd)
 
 
 ## %%
