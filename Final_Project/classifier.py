@@ -44,12 +44,20 @@ X_train_clean = [cleanTweet(tweet) for tweet in X_train]
 
 X_train_spanish = []
 X_train_english = []
+Y_train_spanish_majority = []
+Y_train_english_majority = []
+Y_train_spanish = []
+Y_train_english = []
 
 for i, lang in enumerate(X_train_lang):
     if lang == 'english':
         X_train_english.append(X_train_clean[i])
+        Y_train_english_majority.append(Y_train[i])
+        Y_train_english.append(df['labels_task1'].to_list()[i])
     elif lang == 'spanish':
         X_train_spanish.append(X_train_clean[i])
+        Y_train_spanish_majority.append(Y_train[i])
+        Y_train_spanish.append(df['labels_task1'].to_list()[i])
     else:
         print("Invalid language name in X_train_lang.")
         exit()
@@ -59,6 +67,18 @@ with open('tokenizer_english.pkl', 'wb') as fd:
 
 with open('tokenizer_spanish.pkl', 'wb') as fd:
     pickle.dump(X_train_spanish, fd)
+
+with open('tokenizer_english_labels_majority.pkl', 'wb') as fd:
+    pickle.dump(Y_train_english_majority, fd)
+
+with open('tokenizer_spanish_labels_majority.pkl', 'wb') as fd:
+    pickle.dump(Y_train_spanish_majority, fd)
+
+with open('tokenizer_english_labels.pkl', 'wb') as fd:
+    pickle.dump(Y_train_english, fd)
+
+with open('tokenizer_spanish_labels.pkl', 'wb') as fd:
+    pickle.dump(Y_train_spanish, fd)
 
 
 ## %%
