@@ -14,10 +14,12 @@ import emoji
 
 import pickle
 
+import html
+
 # Remove duplicated <USERNAME> tags
 #     Return cleaned tweet and count of <USERNAME> tags
 def remove_duplicate_usernames(tweet):
- 
+
     # Split input string separated by space
     tweet = tweet.split(" ")
 
@@ -34,35 +36,42 @@ def remove_duplicate_usernames(tweet):
 
             # Increment username_count if 2+ username were present
             #     otherwise, add username to clean_tweet and set username bool to True
-            if username: username_count += 1
+            if username:
+                username_count += 1
             else:
-                clean_tweet = ' '.join(word)
+                clean_tweet += ' ' + word
                 username = True
 
-        else: clean_tweet = ' '.join(word)
+        else:
+            clean_tweet += ' ' + word
 
-    return clean_tweet, username_count
+    return clean_tweet.strip(), username_count
 
 def cleanTweet(tweet):
 
-    clean_tweet = re.sub(r'https://[a-zA-Z0-9/.]+', '', tweet) # Remove links
+    clean_tweet = html.unescape(tweet) # Convert html characters to unicode
+
+    clean_tweet = re.sub(r'https://[a-zA-Z0-9/.]+', '', clean_tweet) # Remove links
 
     clean_tweet = re.sub(r'[.]', ' . ', clean_tweet) # Add spaces around periods
 
     clean_tweet = re.sub(r"([a-zA-Z])[´`]([a-zA-Z])", "\g<1>'\g<2>", clean_tweet) # Convert ´ and ` when surrounded by letters
     clean_tweet = re.sub(r'([0-9])°', '\g<1> degrees', clean_tweet) # Convert ° into the word 'degrees' when directly after a number
-    clean_tweet = re.sub(r'[´`^¨~°|─­]', '', clean_tweet) # Remove special characters
+
+    clean_tweet = re.sub(r'[´`^¨~°|─­,;]', '', clean_tweet) # Remove special characters
 
     clean_tweet = ' '.join(TweetTokenizer(strip_handles = True, reduce_len = True, preserve_case = False).tokenize(clean_tweet)) # Tokenise tweet
 
     clean_tweet = re.sub(r'<3', emoji.emojize(':red_heart:'), clean_tweet) # Convert <3 into an emoji
+
     clean_tweet = re.sub(r'[<>]', '', clean_tweet) # Remove < and >
+    clean_tweet = re.sub(r' - ', ' ', clean_tweet) # Remove hyphens when not connecting words or numbers
 
-    clean_tweet = re.sub(r'usernameidentificationtag', '<USERNAME>', clean_tweet)
+    clean_tweet = re.sub(r'usernameidentificationtag', '<USERNAME>', clean_tweet) # Convert usernames to <USERNAME>
 
-    clean_tweet, username_count = remove_duplicate_usernames(clean_tweet)
+    clean_tweet, username_count = remove_duplicate_usernames(clean_tweet) # Remove duplicate <USERNAME>s
 
-    #print(f'Original Tweet: {tweet}\nCleaned Tweet: {clean_tweet}\n')
+    print(f'Original Tweet: {tweet}\nCleaned Tweet: {clean_tweet}\n')
 
     return clean_tweet, username_count
 
@@ -74,8 +83,6 @@ X_train = df['tweet'].to_list()
 X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in df['lang'].to_list()] # Change language labels to full name
 Y_train = ['YES' if labels.count('YES') > 3 else 'NO' for labels in df['labels_task1'].to_list()] # Label as sexism if 3 or more annotators label the tweet as sexism
 X_train_clean, X_train_username_counts = zip(*[cleanTweet(tweet) for tweet in X_train])
-
-print(X_train_username_counts)
 
 #X_train_spanish = []
 #X_train_english = []

@@ -1,0 +1,186 @@
+´ # Acts as apostrophe in some cases
+` # Acts as apostrophe in some cases
+^ # Removed
+¨ # Removed - acts as quotation marks
+~ # Removed
+≠ # Kept
+< # Removed - shows up again after TweetTokenizer is run in the form of <3 (it was &lt;3 in the original tweet)
+= # Kept
+> # Removed - show up as &gt; before TweetTokenizer is run
+| # Removed
+° # Acts as the words degrees in some cases
+─ # Removed
+  # Normal Space
+_ # Different kind of space
+­ # Removed
+- # Connects words together in some cases
+, # Removed
+; # Removed
+:
+!
+¡
+?
+¿
+/
+.
+'
+‘
+’
+"
+“
+”
+«
+»
+(
+)
+[
+]
+{
+}
+©
+®
+@
+$
+£
+€
+*
+&
+#
+%
++
+━
+↓
+ِ
+́
+‍
+🤷
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+a
+A
+á
+Á
+à
+À
+ä
+ã
+ā
+Ā
+ª
+b
+B
+c
+C
+ç
+d
+D
+e
+E
+é
+É
+ê
+ë
+ė
+f
+F
+g
+G
+h
+H
+i
+I
+í
+Í
+ï
+ī
+ị
+ı
+j
+J
+k
+K
+l
+L
+m
+M
+n
+N
+ñ
+Ñ
+o
+O
+ó
+Ó
+ò
+ô
+ö
+ọ
+Ọ
+º
+p
+P
+q
+Q
+r
+R
+s
+S
+t
+T
+u
+U
+ú
+Ú
+ü
+Ü
+v
+V
+w
+W
+x
+X
+y
+Y
+z
+Z
+ا
+ت
+ح
+د
+ر
+ز
+س
+ع
+غ
+ف
+ك
+ل
+م
+ن
+و
+ي
+ლ
+ 
+人
+伪
+佬
+大
+女
+妖
+娘
+子
+孩
+搜
+来
+狐
+男
+自
+装
