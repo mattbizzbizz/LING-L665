@@ -16,141 +16,141 @@ _ # Different kind of space
 - # Connects words together in some cases
 , # Removed
 ; # Removed
-:
-!
-¡
-?
-¿
-/
-.
-'
-‘
-’
-"
-“
-”
-«
-»
-(
-)
-[
-]
-{
-}
-©
-®
-@
-$
-£
-€
-*
-&
-#
-%
-+
-━
-↓
-ِ
-́
-‍
-🤷
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-a
-A
-á
-Á
-à
-À
-ä
-ã
-ā
-Ā
-ª
-b
-B
-c
-C
-ç
-d
-D
-e
-E
-é
-É
-ê
-ë
-ė
-f
-F
-g
-G
-h
-H
-i
-I
-í
-Í
-ï
-ī
-ị
-ı
-j
-J
-k
-K
-l
-L
-m
-M
-n
-N
-ñ
-Ñ
-o
-O
-ó
-Ó
-ò
-ô
-ö
-ọ
-Ọ
-º
-p
-P
-q
-Q
-r
-R
-s
-S
-t
-T
-u
-U
-ú
-Ú
-ü
-Ü
-v
-V
-w
-W
-x
-X
-y
-Y
-z
-Z
+: # Removed
+! # Remove duplicates
+¡ # Convert to exclamation point
+? # Remove duplicates
+¿ # Convert to question marks
+/ # Removed
+. # Replaced with space (do ellipses provide value?)
+' # Acts as a connection between two subwords in some cases
+‘ # Might act as apostrophe in some cases
+’ # Might act as apostrophe in some cases
+" # Removed
+“ # Removed
+” # Removed
+« # Removed
+» # Removed
+( # Removed
+) # Removed
+[ # Removed
+] # Removed
+{ # Removed
+} # Removed
+© # CHECK THIS Converted to 'c'
+® # Removed
+@ # Usually part of usernames, but also for emails and company names which needed to be handled
+$ # Removed
+£ # Removed
+€ # Removed
+* # Acts as a censoring tool in some cases
+& # Replaced with and after unicoded
+# # Removed
+% # Acts as the word 'percent' in some cases
++ # Replaced with the word 'plus'
+━ # Reaplced with the word 'minus'
+↓ # Removed
+ِ # Removed
+́ # Accent combining character
+‍ # Zero Width Joiner Removed
+🤷  # Emoji
+0 # Removed words with numbers
+1 # Removed words with numbers
+2 # Removed words with numbers
+3 # Removed words with numbers
+4 # Removed words with numbers
+5 # Removed words with numbers
+6 # Removed words with numbers
+7 # Removed words with numbers
+8 # Removed words with numbers
+9 # Removed words with numbers
+a # Letter
+A # Capital letter
+á # Accented a
+Á # Capital accented a
+à # Opposite accented a
+À # Capital opposite accented a
+ä # Letter
+ã # Letter
+ā # Letter
+Ā # Letter
+ª # Converted to a
+b # Letter
+B # Letter
+c # Letter
+C # Letter
+ç # Letter
+d # Letter
+D # Letter
+e # Letter
+E # Letter
+é # Letter
+É # Letter
+ê # Converted to e
+ë # Letter
+ė # Converted to e
+f # Letter
+F # Letter
+g # Letter
+G # Letter
+h # Letter
+H # Letter
+i # Letter
+I # Letter
+í # Letter
+Í # Letter
+ï # Letter
+ī # Letter
+ị # Letter
+ı # Letter
+j # Letter
+J # Letter
+k # Letter
+K # Letter
+l # Letter
+L # Letter
+m # Letter
+M # Letter
+n # Letter
+N # Letter
+ñ # Letter
+Ñ # Letter
+o # Letter
+O # Letter
+ó # Letter
+Ó # Letter
+ò # Converted to accented o
+ô # Converted to o
+ö # Letter
+ọ # Letter
+Ọ # Letter
+º # Acts as degrees
+p # Letter
+P # Letter
+q # Letter
+Q # Letter
+r # Letter
+R # Letter
+s # Letter
+S # Letter
+t # Letter
+T # Letter
+u # Letter
+U # Letter
+ú # Letter
+Ú # Letter
+ü # Letter
+Ü # Letter
+v # Letter
+V # Letter
+w # Letter
+W # Letter
+x # Letter
+X # Letter
+y # Letter
+Y # Letter
+z # Letter
+Z # Letter
 ا
 ت
 ح
