@@ -91,8 +91,6 @@ def normalize(tweet):
 
 def cleanTweet(tweet):
 
-    print(f'Original Tweet: {tweet}')
-
     clean_tweet = html.unescape(tweet) # Convert html characters to unicode
     clean_tweet = unicodedata.normalize('NFKC', clean_tweet) # Normalize font
     clean_tweet = normalize(clean_tweet) # Fix weird fonts
@@ -103,11 +101,7 @@ def cleanTweet(tweet):
 
     clean_tweet = re.sub(r'(@[a-zA-Z]+)@([a-zA-Z])', '\g<1> @\g<2>', clean_tweet) # Add space between usernames
 
-    #print(f'Username Separator Tweet: {clean_tweet}')
-
     clean_tweet = re.sub(r'([^ @][a-zA-z])@([a-zA-Z])', '\g<1>ATIDENTIFICATIONTAG\g<2>', clean_tweet) # Turn @ into an identification tag if it is not a username
-
-    #print(f'non-Username Separator Tweet: {clean_tweet}')
 
     clean_tweet = re.sub(r"([a-zA-Z ])[´`‘’]([a-zA-Z])", "\g<1>'\g<2>", clean_tweet) # Convert ´ and ` when surrounded by letters
     clean_tweet = re.sub(r'([0-9])°', '\g<1> degrees', clean_tweet) # Convert ° into the word 'degrees' when directly after a number
@@ -118,11 +112,7 @@ def cleanTweet(tweet):
 
     clean_tweet = re.sub(r'\u00A9\uFE0F', 'c', clean_tweet) # DOUBLE-CHECK THIS Replacing copyrite symbol with a 'c'
 
-    #print(f'Copyrite re.sub: {clean_tweet}')
-
     clean_tweet = ' '.join(TweetTokenizer(strip_handles = True, reduce_len = True, preserve_case = False).tokenize(clean_tweet)) # Tokenise tweet
-
-    #print(f'TweetTokenizer: {clean_tweet}')
 
     clean_tweet = re.sub(r' :($|\s)', '\g<1> ', clean_tweet) # Replace colons with a space when they aren't part of a time
 
@@ -143,8 +133,6 @@ def cleanTweet(tweet):
 
     clean_tweet = re.sub(r"([a-z>]) '[\s]*s ", "\g<1>'s ", clean_tweet) # Reattach possesives
 
-    #print(f'Reattach Possesives: {clean_tweet}')
-
     clean_tweet, username_count = remove_duplicate(clean_tweet, '<USERNAME>') # Remove duplicate <USERNAME>
     clean_tweet, possesive_username_count = remove_duplicate(clean_tweet, "<USERNAME>'s") # Remove duplicate <USERNAME>'s
 
@@ -159,15 +147,13 @@ def cleanTweet(tweet):
 
     clean_tweet, exclamation_count = remove_duplicate(clean_tweet, '!') # Remove duplicate exclamation points
     clean_tweet, question_count = remove_duplicate(clean_tweet, '?') # Remove duplicate exclamation points
-    clean_tweet = re.sub(r'^[\p{Arabic}\s\p{N}]+$', '', clean_tweet) # Remove Arabic characters
+    clean_tweet = re.sub(r'[\u0600-\u06FF]', '', clean_tweet) # Remove Arabic characters
     clean_tweet = re.sub(r'[\u10A0-\u10FF]+', '', clean_tweet) # Remove Gregorian characters
     clean_tweet = re.sub(r'[\u4E00-\u9FFF]+', '', clean_tweet) # Remove CJK characters
     clean_tweet = re.sub(r'[\uAC00-\uD7AF]+', '', clean_tweet) # Remove Hangul characters
     clean_tweet = re.sub(r'[\u3040-\u309F]+', '', clean_tweet) # Remove hiragana
     clean_tweet = re.sub(r" '()", " ", clean_tweet) # Remove separated apostrophes
     clean_tweet = re.sub(r' +', ' ', clean_tweet) # Remove double-spaces
-
-    print(f'clean_tweet: {clean_tweet}\n')
 
     return clean_tweet, username_count, exclamation_count, question_count, possesive_username_count
 
@@ -177,6 +163,7 @@ X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in df['lang'].
 Y_train = ['YES' if labels.count('YES') > 3 else 'NO' for labels in df['labels_task1'].to_list()] # Label as sexism if 3 or more annotators label the tweet as sexism
 X_train_clean, X_train_username_counts, X_train_exclamation_counts, X_train_question_counts, X_train_possesive_username_counts = zip(*[cleanTweet(tweet) for tweet in X_train])
 
+## Model will replace this section:
 #X_train_spanish = []
 #X_train_english = []
 #Y_train_spanish_majority = []
