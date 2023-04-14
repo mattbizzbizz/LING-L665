@@ -16,6 +16,8 @@ import pickle
 
 import html
 
+from collections import Counter
+
 # Remove duplicated word
 #     Return cleaned tweet and count of word
 def remove_duplicate(tweet, target):
@@ -91,7 +93,7 @@ def normalize(tweet):
 
 def cleanTweet(tweet):
 
-    print(f'Original Tweet: {tweet}')
+    #print(f'Original Tweet: {tweet}')
 
     clean_tweet = html.unescape(tweet) # Convert html characters to unicode
     clean_tweet = unicodedata.normalize('NFKC', clean_tweet) # Normalize font
@@ -131,6 +133,9 @@ def cleanTweet(tweet):
     clean_tweet = re.sub(r'[<>]', '', clean_tweet) # Remove < and >
     clean_tweet = re.sub(r' -($|\s)', ' ', clean_tweet) # Remove hyphens when not connecting words or numbers
 
+    hashtag_regex = re.compile('#[\w]+')
+    hashtag_lst = hashtag_regex.findall(clean_tweet)
+
     clean_tweet = re.sub(r'#[\w]+', '<HASHTAG>', clean_tweet) # Convert hashtags to <HASHTAG>
     clean_tweet = re.sub(r'usernameidentificationtag', '<USERNAME>', clean_tweet) # Convert usernames to <USERNAME>
 
@@ -159,9 +164,11 @@ def cleanTweet(tweet):
     clean_tweet = re.sub(r" '()", " ", clean_tweet) # Remove separated apostrophes
     clean_tweet = re.sub(r' +', ' ', clean_tweet) # Remove double-spaces
 
-    print(f'Clean Tweet: {clean_tweet}\n')
+    #print(f'Clean Tweet: {clean_tweet}\n')
 
-    return clean_tweet, username_count, exclamation_count, question_count, possesive_username_count, hashtag_count
+    return clean_tweet, username_count, exclamation_count, question_count, possesive_username_count, hashtag_count, hashtag_lst
+
+global_counter = Counter()
 
 #%%
 train_data = pd.read_json('./EXIST_2023_Dataset/training/EXIST2023_training.json', encoding='utf8', orient = 'index') # Open training data json file
@@ -169,7 +176,7 @@ train_golds_soft = pd.read_json('./EXIST_2023_Dataset/evaluation/golds/EXIST2023
 X_train_ID = train_data['id_EXIST'].to_list() # Create list of training file tweet IDs
 X_train_tweet = train_data['tweet'].to_list() # Create list of tweets
 X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in train_data['lang'].to_list()] # Change language labels to full name
-X_train_clean_tweet, X_train_username_counts, X_train_exclamation_counts, X_train_question_counts, X_train_possesive_username_counts, X_train_hashtag_counts = zip(*[cleanTweet(tweet) for tweet in X_train_tweet]) # Clean tweets and extract features
+X_train_clean_tweet, X_train_username_counts, X_train_exclamation_counts, X_train_question_counts, X_train_possesive_username_counts, X_train_hashtag_counts, X_train_hashtag_lst = zip(*[cleanTweet(tweet) for tweet in X_train_tweet]) # Clean tweets and extract features
 Y_train_soft = [[round(softs['YES'], 2), round(softs['NO'], 2)] for softs in train_golds_soft['soft_label'].to_list()] # Round soft labels to 2 decimal places
 Y_train_hard = ['YES' if labels.count('YES') >= 3 else 'NO' for labels in train_data['labels_task1'].to_list()] # Create list of hard labels
 
@@ -199,6 +206,13 @@ for i, lang in enumerate(X_train_lang):
     else:
         print("Invalid language name in X_train_lang.")
         exit()
+
+## Iterate through hard labels
+for i, hard_label in enumerate(Y_train_hard):
+
+    ## Check if the tweet is hard labeled as sexist
+    if hard_label == 'YES':
+        global_counter.update(X_train_hashtag_lst[i]) # Add hashtag list to counter
 
 ## Save training data for english as pkl file
 with open('./pkl/train_data_english.pkl', 'wb') as fd:
@@ -230,7 +244,7 @@ dev_golds_soft = pd.read_json('./EXIST_2023_Dataset/evaluation/golds/EXIST2023_d
 X_dev_ID = dev_data['id_EXIST'].to_list() # Create list of dev file tweet IDs
 X_dev_tweet = dev_data['tweet'].to_list() # Create list of tweets
 X_dev_lang = ['english' if lang == 'en' else 'spanish' for lang in dev_data['lang'].to_list()] # Change language labels to full name
-X_dev_clean_tweet, X_dev_username_counts, X_dev_exclamation_counts, X_dev_question_counts, X_dev_possesive_username_counts, X_dev_hashtag_counts = zip(*[cleanTweet(tweet) for tweet in X_dev_tweet]) # Clean tweets and extract features
+X_dev_clean_tweet, X_dev_username_counts, X_dev_exclamation_counts, X_dev_question_counts, X_dev_possesive_username_counts, X_dev_hashtag_counts, X_dev_hashtag_lst = zip(*[cleanTweet(tweet) for tweet in X_dev_tweet]) # Clean tweets and extract features
 Y_dev_soft = [[round(softs['YES'], 2), round(softs['NO'], 2)] for softs in dev_golds_soft['soft_label'].to_list()] # Round soft labels to 2 decimal places
 Y_dev_hard = ['YES' if labels.count('YES') >= 3 else 'NO' for labels in dev_data['labels_task1'].to_list()] # Create list of hard labels
 
@@ -261,6 +275,13 @@ for i, lang in enumerate(X_dev_lang):
         print("Invalid language name in X_dev_lang.")
         exit()
 
+## Iterate through hard labels
+for i, hard_label in enumerate(Y_dev_hard):
+
+    ## Check if the tweet is hard labeled as sexist
+    if hard_label == 'YES':
+        global_counter.update(X_dev_hashtag_lst[i]) # Add hashtag list to counter
+
 ## Save dev data for english as pkl file
 with open('./pkl/dev_data_english.pkl', 'wb') as fd:
     pickle.dump(dev_data_english, fd)
@@ -290,7 +311,7 @@ test_data = pd.read_json('./EXIST_2023_Dataset/test/EXIST2023_test_clean.json', 
 X_test_ID = test_data['id_EXIST'].to_list() # Create list of test file tweet IDs
 X_test_tweet = test_data['tweet'].to_list() # Create list of tweets
 X_test_lang = ['english' if lang == 'en' else 'spanish' for lang in test_data['lang'].to_list()] # Change language labels to full name
-X_test_clean_tweet, X_test_username_counts, X_test_exclamation_counts, X_test_question_counts, X_test_possesive_username_counts, X_dev_hashtag_counts = zip(*[cleanTweet(tweet) for tweet in X_test_tweet]) # Clean tweets and extract features
+X_test_clean_tweet, X_test_username_counts, X_test_exclamation_counts, X_test_question_counts, X_test_possesive_username_counts, X_test_hashtag_counts, X_test_hashtag_lst = zip(*[cleanTweet(tweet) for tweet in X_test_tweet]) # Clean tweets and extract features
 
 test_data_spanish = [] # List of tweet IDs and tweets for spanish
 test_data_english = [] # List of tweet IDs and tweets for english
@@ -318,3 +339,6 @@ with open('./pkl/test_data_english.pkl', 'wb') as fd:
 ## Save test data for spanish as pkl file
 with open('./pkl/test_data_spanish.pkl', 'wb') as fd:
     pickle.dump(test_data_spanish, fd)
+
+for key, value in global_counter.most_common():
+    print(key, value) 
