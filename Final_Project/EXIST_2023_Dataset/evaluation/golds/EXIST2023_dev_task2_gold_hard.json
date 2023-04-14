@@ -1,0 +1,2525 @@
+{
+  "300002": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300003": {
+    "hard_label": "NO"
+  },
+  "300004": {
+    "hard_label": "REPORTED"
+  },
+  "300005": {
+    "hard_label": "NO"
+  },
+  "300006": {
+    "hard_label": "NO"
+  },
+  "300007": {
+    "hard_label": "DIRECT"
+  },
+  "300008": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300009": {
+    "hard_label": "NO"
+  },
+  "300010": {
+    "hard_label": "DIRECT"
+  },
+  "300013": {
+    "hard_label": "DIRECT"
+  },
+  "300014": {
+    "hard_label": "NO"
+  },
+  "300015": {
+    "hard_label": "NO"
+  },
+  "300016": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300017": {
+    "hard_label": "NO"
+  },
+  "300018": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300019": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300021": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300023": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300024": {
+    "hard_label": "NO"
+  },
+  "300026": {
+    "hard_label": "NO"
+  },
+  "300027": {
+    "hard_label": "NO"
+  },
+  "300028": {
+    "hard_label": "NO"
+  },
+  "300029": {
+    "hard_label": "NO"
+  },
+  "300030": {
+    "hard_label": "NO"
+  },
+  "300031": {
+    "hard_label": "NO"
+  },
+  "300032": {
+    "hard_label": "NO"
+  },
+  "300033": {
+    "hard_label": "REPORTED"
+  },
+  "300035": {
+    "hard_label": "NO"
+  },
+  "300037": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300040": {
+    "hard_label": "NO"
+  },
+  "300041": {
+    "hard_label": "NO"
+  },
+  "300042": {
+    "hard_label": "NO"
+  },
+  "300043": {
+    "hard_label": "NO"
+  },
+  "300044": {
+    "hard_label": "NO"
+  },
+  "300045": {
+    "hard_label": "REPORTED"
+  },
+  "300046": {
+    "hard_label": "NO"
+  },
+  "300047": {
+    "hard_label": "NO"
+  },
+  "300048": {
+    "hard_label": "NO"
+  },
+  "300049": {
+    "hard_label": "DIRECT"
+  },
+  "300051": {
+    "hard_label": "REPORTED"
+  },
+  "300052": {
+    "hard_label": "NO"
+  },
+  "300053": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300054": {
+    "hard_label": "NO"
+  },
+  "300055": {
+    "hard_label": "NO"
+  },
+  "300056": {
+    "hard_label": "NO"
+  },
+  "300057": {
+    "hard_label": "DIRECT"
+  },
+  "300058": {
+    "hard_label": "NO"
+  },
+  "300059": {
+    "hard_label": "NO"
+  },
+  "300060": {
+    "hard_label": "NO"
+  },
+  "300061": {
+    "hard_label": "NO"
+  },
+  "300062": {
+    "hard_label": "NO"
+  },
+  "300063": {
+    "hard_label": "NO"
+  },
+  "300065": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300066": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300067": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300068": {
+    "hard_label": "NO"
+  },
+  "300069": {
+    "hard_label": "DIRECT"
+  },
+  "300070": {
+    "hard_label": "NO"
+  },
+  "300071": {
+    "hard_label": "NO"
+  },
+  "300072": {
+    "hard_label": "DIRECT"
+  },
+  "300073": {
+    "hard_label": "NO"
+  },
+  "300074": {
+    "hard_label": "NO"
+  },
+  "300075": {
+    "hard_label": "NO"
+  },
+  "300076": {
+    "hard_label": "NO"
+  },
+  "300077": {
+    "hard_label": "NO"
+  },
+  "300078": {
+    "hard_label": "NO"
+  },
+  "300079": {
+    "hard_label": "REPORTED"
+  },
+  "300080": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300082": {
+    "hard_label": "NO"
+  },
+  "300084": {
+    "hard_label": "NO"
+  },
+  "300085": {
+    "hard_label": "DIRECT"
+  },
+  "300088": {
+    "hard_label": "NO"
+  },
+  "300089": {
+    "hard_label": "NO"
+  },
+  "300091": {
+    "hard_label": "NO"
+  },
+  "300092": {
+    "hard_label": "NO"
+  },
+  "300093": {
+    "hard_label": "REPORTED"
+  },
+  "300094": {
+    "hard_label": "NO"
+  },
+  "300095": {
+    "hard_label": "NO"
+  },
+  "300096": {
+    "hard_label": "NO"
+  },
+  "300097": {
+    "hard_label": "REPORTED"
+  },
+  "300098": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300099": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300100": {
+    "hard_label": "NO"
+  },
+  "300101": {
+    "hard_label": "NO"
+  },
+  "300102": {
+    "hard_label": "NO"
+  },
+  "300103": {
+    "hard_label": "DIRECT"
+  },
+  "300104": {
+    "hard_label": "NO"
+  },
+  "300105": {
+    "hard_label": "NO"
+  },
+  "300106": {
+    "hard_label": "NO"
+  },
+  "300107": {
+    "hard_label": "NO"
+  },
+  "300108": {
+    "hard_label": "NO"
+  },
+  "300109": {
+    "hard_label": "NO"
+  },
+  "300110": {
+    "hard_label": "NO"
+  },
+  "300111": {
+    "hard_label": "NO"
+  },
+  "300113": {
+    "hard_label": "DIRECT"
+  },
+  "300114": {
+    "hard_label": "NO"
+  },
+  "300115": {
+    "hard_label": "NO"
+  },
+  "300117": {
+    "hard_label": "NO"
+  },
+  "300120": {
+    "hard_label": "NO"
+  },
+  "300121": {
+    "hard_label": "NO"
+  },
+  "300122": {
+    "hard_label": "NO"
+  },
+  "300123": {
+    "hard_label": "NO"
+  },
+  "300124": {
+    "hard_label": "DIRECT"
+  },
+  "300125": {
+    "hard_label": "REPORTED"
+  },
+  "300126": {
+    "hard_label": "DIRECT"
+  },
+  "300128": {
+    "hard_label": "NO"
+  },
+  "300129": {
+    "hard_label": "NO"
+  },
+  "300130": {
+    "hard_label": "REPORTED"
+  },
+  "300132": {
+    "hard_label": "DIRECT"
+  },
+  "300134": {
+    "hard_label": "NO"
+  },
+  "300135": {
+    "hard_label": "NO"
+  },
+  "300136": {
+    "hard_label": "NO"
+  },
+  "300137": {
+    "hard_label": "NO"
+  },
+  "300138": {
+    "hard_label": "NO"
+  },
+  "300139": {
+    "hard_label": "NO"
+  },
+  "300140": {
+    "hard_label": "NO"
+  },
+  "300141": {
+    "hard_label": "NO"
+  },
+  "300143": {
+    "hard_label": "DIRECT"
+  },
+  "300144": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300145": {
+    "hard_label": "DIRECT"
+  },
+  "300146": {
+    "hard_label": "NO"
+  },
+  "300147": {
+    "hard_label": "NO"
+  },
+  "300148": {
+    "hard_label": "DIRECT"
+  },
+  "300149": {
+    "hard_label": "DIRECT"
+  },
+  "300150": {
+    "hard_label": "DIRECT"
+  },
+  "300153": {
+    "hard_label": "DIRECT"
+  },
+  "300154": {
+    "hard_label": "NO"
+  },
+  "300155": {
+    "hard_label": "NO"
+  },
+  "300156": {
+    "hard_label": "NO"
+  },
+  "300157": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300158": {
+    "hard_label": "REPORTED"
+  },
+  "300159": {
+    "hard_label": "DIRECT"
+  },
+  "300160": {
+    "hard_label": "DIRECT"
+  },
+  "300161": {
+    "hard_label": "NO"
+  },
+  "300162": {
+    "hard_label": "NO"
+  },
+  "300163": {
+    "hard_label": "NO"
+  },
+  "300164": {
+    "hard_label": "NO"
+  },
+  "300165": {
+    "hard_label": "NO"
+  },
+  "300167": {
+    "hard_label": "NO"
+  },
+  "300169": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300170": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300171": {
+    "hard_label": "NO"
+  },
+  "300172": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300173": {
+    "hard_label": "NO"
+  },
+  "300174": {
+    "hard_label": "NO"
+  },
+  "300175": {
+    "hard_label": "REPORTED"
+  },
+  "300176": {
+    "hard_label": "NO"
+  },
+  "300177": {
+    "hard_label": "NO"
+  },
+  "300179": {
+    "hard_label": "NO"
+  },
+  "300180": {
+    "hard_label": "REPORTED"
+  },
+  "300181": {
+    "hard_label": "NO"
+  },
+  "300182": {
+    "hard_label": "NO"
+  },
+  "300183": {
+    "hard_label": "NO"
+  },
+  "300184": {
+    "hard_label": "NO"
+  },
+  "300185": {
+    "hard_label": "NO"
+  },
+  "300186": {
+    "hard_label": "NO"
+  },
+  "300187": {
+    "hard_label": "NO"
+  },
+  "300188": {
+    "hard_label": "NO"
+  },
+  "300189": {
+    "hard_label": "NO"
+  },
+  "300190": {
+    "hard_label": "DIRECT"
+  },
+  "300191": {
+    "hard_label": "NO"
+  },
+  "300192": {
+    "hard_label": "DIRECT"
+  },
+  "300194": {
+    "hard_label": "NO"
+  },
+  "300196": {
+    "hard_label": "NO"
+  },
+  "300197": {
+    "hard_label": "NO"
+  },
+  "300198": {
+    "hard_label": "NO"
+  },
+  "300199": {
+    "hard_label": "NO"
+  },
+  "300200": {
+    "hard_label": "NO"
+  },
+  "300201": {
+    "hard_label": "NO"
+  },
+  "300202": {
+    "hard_label": "DIRECT"
+  },
+  "300204": {
+    "hard_label": "NO"
+  },
+  "300207": {
+    "hard_label": "NO"
+  },
+  "300208": {
+    "hard_label": "DIRECT"
+  },
+  "300209": {
+    "hard_label": "NO"
+  },
+  "300210": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300211": {
+    "hard_label": "NO"
+  },
+  "300212": {
+    "hard_label": "NO"
+  },
+  "300213": {
+    "hard_label": "NO"
+  },
+  "300214": {
+    "hard_label": "NO"
+  },
+  "300215": {
+    "hard_label": "NO"
+  },
+  "300216": {
+    "hard_label": "NO"
+  },
+  "300217": {
+    "hard_label": "NO"
+  },
+  "300218": {
+    "hard_label": "NO"
+  },
+  "300219": {
+    "hard_label": "NO"
+  },
+  "300221": {
+    "hard_label": "NO"
+  },
+  "300224": {
+    "hard_label": "REPORTED"
+  },
+  "300225": {
+    "hard_label": "NO"
+  },
+  "300227": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300229": {
+    "hard_label": "DIRECT"
+  },
+  "300230": {
+    "hard_label": "NO"
+  },
+  "300231": {
+    "hard_label": "REPORTED"
+  },
+  "300233": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300234": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300235": {
+    "hard_label": "NO"
+  },
+  "300238": {
+    "hard_label": "NO"
+  },
+  "300239": {
+    "hard_label": "NO"
+  },
+  "300240": {
+    "hard_label": "NO"
+  },
+  "300241": {
+    "hard_label": "NO"
+  },
+  "300242": {
+    "hard_label": "DIRECT"
+  },
+  "300243": {
+    "hard_label": "DIRECT"
+  },
+  "300244": {
+    "hard_label": "DIRECT"
+  },
+  "300246": {
+    "hard_label": "DIRECT"
+  },
+  "300247": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300248": {
+    "hard_label": "REPORTED"
+  },
+  "300251": {
+    "hard_label": "NO"
+  },
+  "300252": {
+    "hard_label": "DIRECT"
+  },
+  "300253": {
+    "hard_label": "NO"
+  },
+  "300254": {
+    "hard_label": "NO"
+  },
+  "300255": {
+    "hard_label": "NO"
+  },
+  "300256": {
+    "hard_label": "DIRECT"
+  },
+  "300258": {
+    "hard_label": "DIRECT"
+  },
+  "300259": {
+    "hard_label": "DIRECT"
+  },
+  "300260": {
+    "hard_label": "NO"
+  },
+  "300261": {
+    "hard_label": "DIRECT"
+  },
+  "300262": {
+    "hard_label": "NO"
+  },
+  "300263": {
+    "hard_label": "NO"
+  },
+  "300265": {
+    "hard_label": "NO"
+  },
+  "300266": {
+    "hard_label": "REPORTED"
+  },
+  "300267": {
+    "hard_label": "NO"
+  },
+  "300268": {
+    "hard_label": "DIRECT"
+  },
+  "300269": {
+    "hard_label": "NO"
+  },
+  "300270": {
+    "hard_label": "DIRECT"
+  },
+  "300271": {
+    "hard_label": "DIRECT"
+  },
+  "300272": {
+    "hard_label": "DIRECT"
+  },
+  "300273": {
+    "hard_label": "REPORTED"
+  },
+  "300274": {
+    "hard_label": "NO"
+  },
+  "300275": {
+    "hard_label": "NO"
+  },
+  "300277": {
+    "hard_label": "DIRECT"
+  },
+  "300278": {
+    "hard_label": "DIRECT"
+  },
+  "300279": {
+    "hard_label": "DIRECT"
+  },
+  "300280": {
+    "hard_label": "NO"
+  },
+  "300281": {
+    "hard_label": "NO"
+  },
+  "300282": {
+    "hard_label": "NO"
+  },
+  "300283": {
+    "hard_label": "NO"
+  },
+  "300284": {
+    "hard_label": "NO"
+  },
+  "300285": {
+    "hard_label": "NO"
+  },
+  "300286": {
+    "hard_label": "NO"
+  },
+  "300287": {
+    "hard_label": "NO"
+  },
+  "300288": {
+    "hard_label": "REPORTED"
+  },
+  "300292": {
+    "hard_label": "DIRECT"
+  },
+  "300293": {
+    "hard_label": "NO"
+  },
+  "300295": {
+    "hard_label": "DIRECT"
+  },
+  "300296": {
+    "hard_label": "REPORTED"
+  },
+  "300297": {
+    "hard_label": "DIRECT"
+  },
+  "300298": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300299": {
+    "hard_label": "DIRECT"
+  },
+  "300300": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300301": {
+    "hard_label": "DIRECT"
+  },
+  "300302": {
+    "hard_label": "DIRECT"
+  },
+  "300303": {
+    "hard_label": "DIRECT"
+  },
+  "300304": {
+    "hard_label": "DIRECT"
+  },
+  "300305": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300306": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300307": {
+    "hard_label": "DIRECT"
+  },
+  "300308": {
+    "hard_label": "REPORTED"
+  },
+  "300309": {
+    "hard_label": "DIRECT"
+  },
+  "300311": {
+    "hard_label": "DIRECT"
+  },
+  "300312": {
+    "hard_label": "DIRECT"
+  },
+  "300314": {
+    "hard_label": "REPORTED"
+  },
+  "300315": {
+    "hard_label": "NO"
+  },
+  "300316": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300318": {
+    "hard_label": "DIRECT"
+  },
+  "300319": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300320": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300321": {
+    "hard_label": "DIRECT"
+  },
+  "300323": {
+    "hard_label": "DIRECT"
+  },
+  "300324": {
+    "hard_label": "DIRECT"
+  },
+  "300325": {
+    "hard_label": "REPORTED"
+  },
+  "300326": {
+    "hard_label": "REPORTED"
+  },
+  "300327": {
+    "hard_label": "DIRECT"
+  },
+  "300328": {
+    "hard_label": "NO"
+  },
+  "300330": {
+    "hard_label": "NO"
+  },
+  "300331": {
+    "hard_label": "NO"
+  },
+  "300332": {
+    "hard_label": "NO"
+  },
+  "300333": {
+    "hard_label": "NO"
+  },
+  "300337": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300338": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300341": {
+    "hard_label": "NO"
+  },
+  "300342": {
+    "hard_label": "NO"
+  },
+  "300343": {
+    "hard_label": "REPORTED"
+  },
+  "300344": {
+    "hard_label": "REPORTED"
+  },
+  "300345": {
+    "hard_label": "DIRECT"
+  },
+  "300346": {
+    "hard_label": "DIRECT"
+  },
+  "300348": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300349": {
+    "hard_label": "REPORTED"
+  },
+  "300353": {
+    "hard_label": "NO"
+  },
+  "300354": {
+    "hard_label": "NO"
+  },
+  "300355": {
+    "hard_label": "NO"
+  },
+  "300356": {
+    "hard_label": "REPORTED"
+  },
+  "300358": {
+    "hard_label": "NO"
+  },
+  "300359": {
+    "hard_label": "NO"
+  },
+  "300360": {
+    "hard_label": "DIRECT"
+  },
+  "300361": {
+    "hard_label": "NO"
+  },
+  "300362": {
+    "hard_label": "NO"
+  },
+  "300363": {
+    "hard_label": "NO"
+  },
+  "300365": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300366": {
+    "hard_label": "NO"
+  },
+  "300367": {
+    "hard_label": "DIRECT"
+  },
+  "300368": {
+    "hard_label": "REPORTED"
+  },
+  "300369": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300370": {
+    "hard_label": "DIRECT"
+  },
+  "300371": {
+    "hard_label": "NO"
+  },
+  "300373": {
+    "hard_label": "DIRECT"
+  },
+  "300374": {
+    "hard_label": "DIRECT"
+  },
+  "300376": {
+    "hard_label": "DIRECT"
+  },
+  "300377": {
+    "hard_label": "DIRECT"
+  },
+  "300378": {
+    "hard_label": "DIRECT"
+  },
+  "300379": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300380": {
+    "hard_label": "DIRECT"
+  },
+  "300381": {
+    "hard_label": "DIRECT"
+  },
+  "300382": {
+    "hard_label": "NO"
+  },
+  "300383": {
+    "hard_label": "DIRECT"
+  },
+  "300384": {
+    "hard_label": "NO"
+  },
+  "300385": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300387": {
+    "hard_label": "DIRECT"
+  },
+  "300391": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300392": {
+    "hard_label": "NO"
+  },
+  "300393": {
+    "hard_label": "DIRECT"
+  },
+  "300394": {
+    "hard_label": "NO"
+  },
+  "300395": {
+    "hard_label": "DIRECT"
+  },
+  "300396": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300397": {
+    "hard_label": "DIRECT"
+  },
+  "300398": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300399": {
+    "hard_label": "DIRECT"
+  },
+  "300400": {
+    "hard_label": "NO"
+  },
+  "300401": {
+    "hard_label": "NO"
+  },
+  "300402": {
+    "hard_label": "NO"
+  },
+  "300403": {
+    "hard_label": "NO"
+  },
+  "300405": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300407": {
+    "hard_label": "DIRECT"
+  },
+  "300408": {
+    "hard_label": "NO"
+  },
+  "300409": {
+    "hard_label": "DIRECT"
+  },
+  "300410": {
+    "hard_label": "DIRECT"
+  },
+  "300411": {
+    "hard_label": "DIRECT"
+  },
+  "300412": {
+    "hard_label": "DIRECT"
+  },
+  "300414": {
+    "hard_label": "DIRECT"
+  },
+  "300417": {
+    "hard_label": "DIRECT"
+  },
+  "300418": {
+    "hard_label": "REPORTED"
+  },
+  "300419": {
+    "hard_label": "REPORTED"
+  },
+  "300420": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300421": {
+    "hard_label": "NO"
+  },
+  "300422": {
+    "hard_label": "DIRECT"
+  },
+  "300424": {
+    "hard_label": "REPORTED"
+  },
+  "300425": {
+    "hard_label": "DIRECT"
+  },
+  "300426": {
+    "hard_label": "REPORTED"
+  },
+  "300429": {
+    "hard_label": "DIRECT"
+  },
+  "300430": {
+    "hard_label": "REPORTED"
+  },
+  "300431": {
+    "hard_label": "NO"
+  },
+  "300432": {
+    "hard_label": "DIRECT"
+  },
+  "300433": {
+    "hard_label": "NO"
+  },
+  "300434": {
+    "hard_label": "NO"
+  },
+  "300435": {
+    "hard_label": "NO"
+  },
+  "300437": {
+    "hard_label": "DIRECT"
+  },
+  "300439": {
+    "hard_label": "REPORTED"
+  },
+  "300440": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300442": {
+    "hard_label": "DIRECT"
+  },
+  "300443": {
+    "hard_label": "DIRECT"
+  },
+  "300444": {
+    "hard_label": "NO"
+  },
+  "300445": {
+    "hard_label": "DIRECT"
+  },
+  "300446": {
+    "hard_label": "NO"
+  },
+  "300447": {
+    "hard_label": "DIRECT"
+  },
+  "300448": {
+    "hard_label": "NO"
+  },
+  "300449": {
+    "hard_label": "NO"
+  },
+  "300450": {
+    "hard_label": "NO"
+  },
+  "300451": {
+    "hard_label": "REPORTED"
+  },
+  "300452": {
+    "hard_label": "NO"
+  },
+  "300453": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300454": {
+    "hard_label": "DIRECT"
+  },
+  "300455": {
+    "hard_label": "NO"
+  },
+  "300457": {
+    "hard_label": "NO"
+  },
+  "300458": {
+    "hard_label": "DIRECT"
+  },
+  "300459": {
+    "hard_label": "DIRECT"
+  },
+  "300462": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300463": {
+    "hard_label": "NO"
+  },
+  "300464": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300465": {
+    "hard_label": "REPORTED"
+  },
+  "300466": {
+    "hard_label": "NO"
+  },
+  "300467": {
+    "hard_label": "NO"
+  },
+  "300469": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300470": {
+    "hard_label": "DIRECT"
+  },
+  "300471": {
+    "hard_label": "DIRECT"
+  },
+  "300472": {
+    "hard_label": "DIRECT"
+  },
+  "300474": {
+    "hard_label": "DIRECT"
+  },
+  "300475": {
+    "hard_label": "REPORTED"
+  },
+  "300476": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300477": {
+    "hard_label": "NO"
+  },
+  "300478": {
+    "hard_label": "NO"
+  },
+  "300479": {
+    "hard_label": "NO"
+  },
+  "300481": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300482": {
+    "hard_label": "DIRECT"
+  },
+  "300483": {
+    "hard_label": "DIRECT"
+  },
+  "300484": {
+    "hard_label": "DIRECT"
+  },
+  "300485": {
+    "hard_label": "NO"
+  },
+  "300486": {
+    "hard_label": "NO"
+  },
+  "300487": {
+    "hard_label": "NO"
+  },
+  "300488": {
+    "hard_label": "NO"
+  },
+  "300489": {
+    "hard_label": "NO"
+  },
+  "300490": {
+    "hard_label": "NO"
+  },
+  "300491": {
+    "hard_label": "NO"
+  },
+  "300492": {
+    "hard_label": "NO"
+  },
+  "300493": {
+    "hard_label": "NO"
+  },
+  "300495": {
+    "hard_label": "NO"
+  },
+  "300497": {
+    "hard_label": "NO"
+  },
+  "300499": {
+    "hard_label": "NO"
+  },
+  "300500": {
+    "hard_label": "DIRECT"
+  },
+  "300501": {
+    "hard_label": "DIRECT"
+  },
+  "300502": {
+    "hard_label": "DIRECT"
+  },
+  "300503": {
+    "hard_label": "DIRECT"
+  },
+  "300504": {
+    "hard_label": "NO"
+  },
+  "300507": {
+    "hard_label": "NO"
+  },
+  "300509": {
+    "hard_label": "DIRECT"
+  },
+  "300510": {
+    "hard_label": "DIRECT"
+  },
+  "300512": {
+    "hard_label": "REPORTED"
+  },
+  "300513": {
+    "hard_label": "REPORTED"
+  },
+  "300514": {
+    "hard_label": "NO"
+  },
+  "300517": {
+    "hard_label": "NO"
+  },
+  "300518": {
+    "hard_label": "NO"
+  },
+  "300519": {
+    "hard_label": "REPORTED"
+  },
+  "300521": {
+    "hard_label": "DIRECT"
+  },
+  "300523": {
+    "hard_label": "NO"
+  },
+  "300524": {
+    "hard_label": "NO"
+  },
+  "300525": {
+    "hard_label": "NO"
+  },
+  "300527": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300528": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300530": {
+    "hard_label": "NO"
+  },
+  "300531": {
+    "hard_label": "DIRECT"
+  },
+  "300532": {
+    "hard_label": "NO"
+  },
+  "300533": {
+    "hard_label": "NO"
+  },
+  "300534": {
+    "hard_label": "NO"
+  },
+  "300535": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300536": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "300538": {
+    "hard_label": "NO"
+  },
+  "300539": {
+    "hard_label": "NO"
+  },
+  "300540": {
+    "hard_label": "NO"
+  },
+  "300541": {
+    "hard_label": "DIRECT"
+  },
+  "300542": {
+    "hard_label": "NO"
+  },
+  "300544": {
+    "hard_label": "DIRECT"
+  },
+  "300545": {
+    "hard_label": "DIRECT"
+  },
+  "300547": {
+    "hard_label": "DIRECT"
+  },
+  "300548": {
+    "hard_label": "DIRECT"
+  },
+  "300549": {
+    "hard_label": "DIRECT"
+  },
+  "400001": {
+    "hard_label": "NO"
+  },
+  "400002": {
+    "hard_label": "REPORTED"
+  },
+  "400003": {
+    "hard_label": "REPORTED"
+  },
+  "400004": {
+    "hard_label": "NO"
+  },
+  "400005": {
+    "hard_label": "NO"
+  },
+  "400006": {
+    "hard_label": "NO"
+  },
+  "400007": {
+    "hard_label": "NO"
+  },
+  "400009": {
+    "hard_label": "NO"
+  },
+  "400012": {
+    "hard_label": "NO"
+  },
+  "400015": {
+    "hard_label": "NO"
+  },
+  "400017": {
+    "hard_label": "NO"
+  },
+  "400020": {
+    "hard_label": "REPORTED"
+  },
+  "400021": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400022": {
+    "hard_label": "NO"
+  },
+  "400023": {
+    "hard_label": "NO"
+  },
+  "400024": {
+    "hard_label": "NO"
+  },
+  "400025": {
+    "hard_label": "NO"
+  },
+  "400026": {
+    "hard_label": "NO"
+  },
+  "400027": {
+    "hard_label": "NO"
+  },
+  "400028": {
+    "hard_label": "NO"
+  },
+  "400031": {
+    "hard_label": "DIRECT"
+  },
+  "400032": {
+    "hard_label": "NO"
+  },
+  "400033": {
+    "hard_label": "DIRECT"
+  },
+  "400034": {
+    "hard_label": "REPORTED"
+  },
+  "400035": {
+    "hard_label": "NO"
+  },
+  "400036": {
+    "hard_label": "NO"
+  },
+  "400037": {
+    "hard_label": "NO"
+  },
+  "400040": {
+    "hard_label": "NO"
+  },
+  "400041": {
+    "hard_label": "NO"
+  },
+  "400042": {
+    "hard_label": "NO"
+  },
+  "400044": {
+    "hard_label": "DIRECT"
+  },
+  "400045": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400046": {
+    "hard_label": "NO"
+  },
+  "400047": {
+    "hard_label": "NO"
+  },
+  "400048": {
+    "hard_label": "NO"
+  },
+  "400049": {
+    "hard_label": "NO"
+  },
+  "400050": {
+    "hard_label": "NO"
+  },
+  "400051": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400052": {
+    "hard_label": "NO"
+  },
+  "400053": {
+    "hard_label": "NO"
+  },
+  "400055": {
+    "hard_label": "NO"
+  },
+  "400056": {
+    "hard_label": "NO"
+  },
+  "400057": {
+    "hard_label": "NO"
+  },
+  "400058": {
+    "hard_label": "NO"
+  },
+  "400059": {
+    "hard_label": "DIRECT"
+  },
+  "400060": {
+    "hard_label": "NO"
+  },
+  "400061": {
+    "hard_label": "NO"
+  },
+  "400062": {
+    "hard_label": "REPORTED"
+  },
+  "400064": {
+    "hard_label": "DIRECT"
+  },
+  "400065": {
+    "hard_label": "DIRECT"
+  },
+  "400067": {
+    "hard_label": "REPORTED"
+  },
+  "400069": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400070": {
+    "hard_label": "NO"
+  },
+  "400071": {
+    "hard_label": "NO"
+  },
+  "400072": {
+    "hard_label": "NO"
+  },
+  "400074": {
+    "hard_label": "NO"
+  },
+  "400075": {
+    "hard_label": "NO"
+  },
+  "400076": {
+    "hard_label": "DIRECT"
+  },
+  "400077": {
+    "hard_label": "NO"
+  },
+  "400078": {
+    "hard_label": "DIRECT"
+  },
+  "400080": {
+    "hard_label": "DIRECT"
+  },
+  "400081": {
+    "hard_label": "DIRECT"
+  },
+  "400082": {
+    "hard_label": "NO"
+  },
+  "400083": {
+    "hard_label": "NO"
+  },
+  "400084": {
+    "hard_label": "NO"
+  },
+  "400085": {
+    "hard_label": "NO"
+  },
+  "400086": {
+    "hard_label": "NO"
+  },
+  "400087": {
+    "hard_label": "NO"
+  },
+  "400088": {
+    "hard_label": "NO"
+  },
+  "400089": {
+    "hard_label": "NO"
+  },
+  "400090": {
+    "hard_label": "NO"
+  },
+  "400091": {
+    "hard_label": "NO"
+  },
+  "400092": {
+    "hard_label": "REPORTED"
+  },
+  "400093": {
+    "hard_label": "DIRECT"
+  },
+  "400094": {
+    "hard_label": "DIRECT"
+  },
+  "400095": {
+    "hard_label": "DIRECT"
+  },
+  "400096": {
+    "hard_label": "DIRECT"
+  },
+  "400097": {
+    "hard_label": "DIRECT"
+  },
+  "400098": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400100": {
+    "hard_label": "NO"
+  },
+  "400101": {
+    "hard_label": "NO"
+  },
+  "400102": {
+    "hard_label": "NO"
+  },
+  "400103": {
+    "hard_label": "NO"
+  },
+  "400104": {
+    "hard_label": "NO"
+  },
+  "400105": {
+    "hard_label": "NO"
+  },
+  "400107": {
+    "hard_label": "REPORTED"
+  },
+  "400108": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400109": {
+    "hard_label": "NO"
+  },
+  "400111": {
+    "hard_label": "NO"
+  },
+  "400113": {
+    "hard_label": "NO"
+  },
+  "400114": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400116": {
+    "hard_label": "NO"
+  },
+  "400117": {
+    "hard_label": "NO"
+  },
+  "400118": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400121": {
+    "hard_label": "NO"
+  },
+  "400122": {
+    "hard_label": "NO"
+  },
+  "400123": {
+    "hard_label": "NO"
+  },
+  "400124": {
+    "hard_label": "NO"
+  },
+  "400125": {
+    "hard_label": "NO"
+  },
+  "400126": {
+    "hard_label": "DIRECT"
+  },
+  "400127": {
+    "hard_label": "NO"
+  },
+  "400129": {
+    "hard_label": "NO"
+  },
+  "400130": {
+    "hard_label": "NO"
+  },
+  "400131": {
+    "hard_label": "NO"
+  },
+  "400132": {
+    "hard_label": "NO"
+  },
+  "400133": {
+    "hard_label": "DIRECT"
+  },
+  "400134": {
+    "hard_label": "NO"
+  },
+  "400135": {
+    "hard_label": "NO"
+  },
+  "400136": {
+    "hard_label": "NO"
+  },
+  "400137": {
+    "hard_label": "NO"
+  },
+  "400138": {
+    "hard_label": "NO"
+  },
+  "400140": {
+    "hard_label": "REPORTED"
+  },
+  "400141": {
+    "hard_label": "REPORTED"
+  },
+  "400142": {
+    "hard_label": "NO"
+  },
+  "400143": {
+    "hard_label": "NO"
+  },
+  "400144": {
+    "hard_label": "REPORTED"
+  },
+  "400145": {
+    "hard_label": "NO"
+  },
+  "400147": {
+    "hard_label": "NO"
+  },
+  "400148": {
+    "hard_label": "REPORTED"
+  },
+  "400149": {
+    "hard_label": "NO"
+  },
+  "400151": {
+    "hard_label": "DIRECT"
+  },
+  "400152": {
+    "hard_label": "DIRECT"
+  },
+  "400155": {
+    "hard_label": "NO"
+  },
+  "400156": {
+    "hard_label": "NO"
+  },
+  "400157": {
+    "hard_label": "REPORTED"
+  },
+  "400159": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400161": {
+    "hard_label": "DIRECT"
+  },
+  "400162": {
+    "hard_label": "DIRECT"
+  },
+  "400166": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400169": {
+    "hard_label": "NO"
+  },
+  "400170": {
+    "hard_label": "DIRECT"
+  },
+  "400171": {
+    "hard_label": "NO"
+  },
+  "400174": {
+    "hard_label": "DIRECT"
+  },
+  "400175": {
+    "hard_label": "NO"
+  },
+  "400176": {
+    "hard_label": "NO"
+  },
+  "400177": {
+    "hard_label": "NO"
+  },
+  "400178": {
+    "hard_label": "NO"
+  },
+  "400180": {
+    "hard_label": "NO"
+  },
+  "400181": {
+    "hard_label": "DIRECT"
+  },
+  "400182": {
+    "hard_label": "DIRECT"
+  },
+  "400183": {
+    "hard_label": "DIRECT"
+  },
+  "400184": {
+    "hard_label": "DIRECT"
+  },
+  "400185": {
+    "hard_label": "NO"
+  },
+  "400186": {
+    "hard_label": "DIRECT"
+  },
+  "400187": {
+    "hard_label": "NO"
+  },
+  "400188": {
+    "hard_label": "REPORTED"
+  },
+  "400189": {
+    "hard_label": "NO"
+  },
+  "400190": {
+    "hard_label": "NO"
+  },
+  "400191": {
+    "hard_label": "NO"
+  },
+  "400192": {
+    "hard_label": "NO"
+  },
+  "400194": {
+    "hard_label": "REPORTED"
+  },
+  "400195": {
+    "hard_label": "DIRECT"
+  },
+  "400196": {
+    "hard_label": "NO"
+  },
+  "400197": {
+    "hard_label": "NO"
+  },
+  "400198": {
+    "hard_label": "NO"
+  },
+  "400199": {
+    "hard_label": "NO"
+  },
+  "400200": {
+    "hard_label": "NO"
+  },
+  "400201": {
+    "hard_label": "DIRECT"
+  },
+  "400202": {
+    "hard_label": "DIRECT"
+  },
+  "400203": {
+    "hard_label": "NO"
+  },
+  "400204": {
+    "hard_label": "DIRECT"
+  },
+  "400205": {
+    "hard_label": "NO"
+  },
+  "400206": {
+    "hard_label": "NO"
+  },
+  "400207": {
+    "hard_label": "NO"
+  },
+  "400208": {
+    "hard_label": "NO"
+  },
+  "400209": {
+    "hard_label": "NO"
+  },
+  "400210": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400211": {
+    "hard_label": "NO"
+  },
+  "400212": {
+    "hard_label": "NO"
+  },
+  "400213": {
+    "hard_label": "NO"
+  },
+  "400214": {
+    "hard_label": "NO"
+  },
+  "400215": {
+    "hard_label": "NO"
+  },
+  "400218": {
+    "hard_label": "DIRECT"
+  },
+  "400219": {
+    "hard_label": "NO"
+  },
+  "400222": {
+    "hard_label": "REPORTED"
+  },
+  "400223": {
+    "hard_label": "NO"
+  },
+  "400224": {
+    "hard_label": "NO"
+  },
+  "400225": {
+    "hard_label": "DIRECT"
+  },
+  "400226": {
+    "hard_label": "DIRECT"
+  },
+  "400227": {
+    "hard_label": "DIRECT"
+  },
+  "400228": {
+    "hard_label": "DIRECT"
+  },
+  "400229": {
+    "hard_label": "DIRECT"
+  },
+  "400230": {
+    "hard_label": "NO"
+  },
+  "400232": {
+    "hard_label": "NO"
+  },
+  "400233": {
+    "hard_label": "NO"
+  },
+  "400234": {
+    "hard_label": "NO"
+  },
+  "400235": {
+    "hard_label": "REPORTED"
+  },
+  "400236": {
+    "hard_label": "DIRECT"
+  },
+  "400237": {
+    "hard_label": "NO"
+  },
+  "400238": {
+    "hard_label": "REPORTED"
+  },
+  "400239": {
+    "hard_label": "NO"
+  },
+  "400240": {
+    "hard_label": "NO"
+  },
+  "400241": {
+    "hard_label": "NO"
+  },
+  "400242": {
+    "hard_label": "NO"
+  },
+  "400243": {
+    "hard_label": "NO"
+  },
+  "400245": {
+    "hard_label": "REPORTED"
+  },
+  "400246": {
+    "hard_label": "DIRECT"
+  },
+  "400248": {
+    "hard_label": "DIRECT"
+  },
+  "400250": {
+    "hard_label": "REPORTED"
+  },
+  "400252": {
+    "hard_label": "DIRECT"
+  },
+  "400255": {
+    "hard_label": "DIRECT"
+  },
+  "400256": {
+    "hard_label": "NO"
+  },
+  "400257": {
+    "hard_label": "NO"
+  },
+  "400258": {
+    "hard_label": "REPORTED"
+  },
+  "400259": {
+    "hard_label": "NO"
+  },
+  "400261": {
+    "hard_label": "NO"
+  },
+  "400262": {
+    "hard_label": "NO"
+  },
+  "400263": {
+    "hard_label": "NO"
+  },
+  "400264": {
+    "hard_label": "NO"
+  },
+  "400265": {
+    "hard_label": "NO"
+  },
+  "400266": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400267": {
+    "hard_label": "NO"
+  },
+  "400268": {
+    "hard_label": "DIRECT"
+  },
+  "400269": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400270": {
+    "hard_label": "DIRECT"
+  },
+  "400272": {
+    "hard_label": "DIRECT"
+  },
+  "400273": {
+    "hard_label": "NO"
+  },
+  "400274": {
+    "hard_label": "NO"
+  },
+  "400275": {
+    "hard_label": "NO"
+  },
+  "400276": {
+    "hard_label": "NO"
+  },
+  "400277": {
+    "hard_label": "NO"
+  },
+  "400278": {
+    "hard_label": "NO"
+  },
+  "400279": {
+    "hard_label": "NO"
+  },
+  "400280": {
+    "hard_label": "NO"
+  },
+  "400281": {
+    "hard_label": "NO"
+  },
+  "400282": {
+    "hard_label": "NO"
+  },
+  "400283": {
+    "hard_label": "NO"
+  },
+  "400284": {
+    "hard_label": "NO"
+  },
+  "400285": {
+    "hard_label": "NO"
+  },
+  "400286": {
+    "hard_label": "REPORTED"
+  },
+  "400287": {
+    "hard_label": "REPORTED"
+  },
+  "400288": {
+    "hard_label": "NO"
+  },
+  "400289": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400290": {
+    "hard_label": "NO"
+  },
+  "400291": {
+    "hard_label": "REPORTED"
+  },
+  "400292": {
+    "hard_label": "NO"
+  },
+  "400294": {
+    "hard_label": "NO"
+  },
+  "400295": {
+    "hard_label": "NO"
+  },
+  "400296": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400297": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400298": {
+    "hard_label": "NO"
+  },
+  "400300": {
+    "hard_label": "NO"
+  },
+  "400302": {
+    "hard_label": "NO"
+  },
+  "400303": {
+    "hard_label": "NO"
+  },
+  "400304": {
+    "hard_label": "NO"
+  },
+  "400306": {
+    "hard_label": "NO"
+  },
+  "400307": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400308": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400309": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400311": {
+    "hard_label": "NO"
+  },
+  "400313": {
+    "hard_label": "NO"
+  },
+  "400314": {
+    "hard_label": "NO"
+  },
+  "400315": {
+    "hard_label": "NO"
+  },
+  "400316": {
+    "hard_label": "NO"
+  },
+  "400317": {
+    "hard_label": "NO"
+  },
+  "400318": {
+    "hard_label": "NO"
+  },
+  "400319": {
+    "hard_label": "NO"
+  },
+  "400320": {
+    "hard_label": "NO"
+  },
+  "400321": {
+    "hard_label": "DIRECT"
+  },
+  "400323": {
+    "hard_label": "NO"
+  },
+  "400324": {
+    "hard_label": "NO"
+  },
+  "400325": {
+    "hard_label": "NO"
+  },
+  "400326": {
+    "hard_label": "NO"
+  },
+  "400327": {
+    "hard_label": "NO"
+  },
+  "400328": {
+    "hard_label": "REPORTED"
+  },
+  "400329": {
+    "hard_label": "NO"
+  },
+  "400331": {
+    "hard_label": "NO"
+  },
+  "400333": {
+    "hard_label": "NO"
+  },
+  "400334": {
+    "hard_label": "NO"
+  },
+  "400335": {
+    "hard_label": "NO"
+  },
+  "400336": {
+    "hard_label": "NO"
+  },
+  "400337": {
+    "hard_label": "NO"
+  },
+  "400341": {
+    "hard_label": "NO"
+  },
+  "400343": {
+    "hard_label": "NO"
+  },
+  "400344": {
+    "hard_label": "REPORTED"
+  },
+  "400346": {
+    "hard_label": "NO"
+  },
+  "400347": {
+    "hard_label": "NO"
+  },
+  "400349": {
+    "hard_label": "DIRECT"
+  },
+  "400350": {
+    "hard_label": "NO"
+  },
+  "400351": {
+    "hard_label": "NO"
+  },
+  "400353": {
+    "hard_label": "NO"
+  },
+  "400354": {
+    "hard_label": "NO"
+  },
+  "400355": {
+    "hard_label": "NO"
+  },
+  "400356": {
+    "hard_label": "NO"
+  },
+  "400357": {
+    "hard_label": "NO"
+  },
+  "400358": {
+    "hard_label": "NO"
+  },
+  "400359": {
+    "hard_label": "DIRECT"
+  },
+  "400360": {
+    "hard_label": "DIRECT"
+  },
+  "400361": {
+    "hard_label": "NO"
+  },
+  "400362": {
+    "hard_label": "NO"
+  },
+  "400363": {
+    "hard_label": "DIRECT"
+  },
+  "400364": {
+    "hard_label": "DIRECT"
+  },
+  "400365": {
+    "hard_label": "NO"
+  },
+  "400366": {
+    "hard_label": "NO"
+  },
+  "400367": {
+    "hard_label": "NO"
+  },
+  "400368": {
+    "hard_label": "NO"
+  },
+  "400369": {
+    "hard_label": "NO"
+  },
+  "400370": {
+    "hard_label": "REPORTED"
+  },
+  "400372": {
+    "hard_label": "DIRECT"
+  },
+  "400373": {
+    "hard_label": "DIRECT"
+  },
+  "400374": {
+    "hard_label": "DIRECT"
+  },
+  "400375": {
+    "hard_label": "DIRECT"
+  },
+  "400376": {
+    "hard_label": "NO"
+  },
+  "400377": {
+    "hard_label": "NO"
+  },
+  "400378": {
+    "hard_label": "NO"
+  },
+  "400379": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400380": {
+    "hard_label": "DIRECT"
+  },
+  "400381": {
+    "hard_label": "DIRECT"
+  },
+  "400382": {
+    "hard_label": "DIRECT"
+  },
+  "400383": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400384": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400385": {
+    "hard_label": "NO"
+  },
+  "400386": {
+    "hard_label": "NO"
+  },
+  "400387": {
+    "hard_label": "NO"
+  },
+  "400388": {
+    "hard_label": "NO"
+  },
+  "400389": {
+    "hard_label": "NO"
+  },
+  "400390": {
+    "hard_label": "NO"
+  },
+  "400391": {
+    "hard_label": "DIRECT"
+  },
+  "400394": {
+    "hard_label": "NO"
+  },
+  "400395": {
+    "hard_label": "NO"
+  },
+  "400396": {
+    "hard_label": "NO"
+  },
+  "400397": {
+    "hard_label": "NO"
+  },
+  "400398": {
+    "hard_label": "NO"
+  },
+  "400400": {
+    "hard_label": "NO"
+  },
+  "400401": {
+    "hard_label": "NO"
+  },
+  "400402": {
+    "hard_label": "NO"
+  },
+  "400403": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400404": {
+    "hard_label": "NO"
+  },
+  "400405": {
+    "hard_label": "NO"
+  },
+  "400407": {
+    "hard_label": "DIRECT"
+  },
+  "400408": {
+    "hard_label": "DIRECT"
+  },
+  "400409": {
+    "hard_label": "NO"
+  },
+  "400410": {
+    "hard_label": "NO"
+  },
+  "400411": {
+    "hard_label": "DIRECT"
+  },
+  "400412": {
+    "hard_label": "NO"
+  },
+  "400413": {
+    "hard_label": "NO"
+  },
+  "400414": {
+    "hard_label": "NO"
+  },
+  "400418": {
+    "hard_label": "DIRECT"
+  },
+  "400419": {
+    "hard_label": "NO"
+  },
+  "400420": {
+    "hard_label": "NO"
+  },
+  "400422": {
+    "hard_label": "NO"
+  },
+  "400423": {
+    "hard_label": "NO"
+  },
+  "400424": {
+    "hard_label": "DIRECT"
+  },
+  "400425": {
+    "hard_label": "NO"
+  },
+  "400426": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400427": {
+    "hard_label": "REPORTED"
+  },
+  "400428": {
+    "hard_label": "NO"
+  },
+  "400429": {
+    "hard_label": "DIRECT"
+  },
+  "400431": {
+    "hard_label": "NO"
+  },
+  "400433": {
+    "hard_label": "NO"
+  },
+  "400434": {
+    "hard_label": "NO"
+  },
+  "400436": {
+    "hard_label": "DIRECT"
+  },
+  "400437": {
+    "hard_label": "DIRECT"
+  },
+  "400438": {
+    "hard_label": "DIRECT"
+  },
+  "400440": {
+    "hard_label": "NO"
+  },
+  "400442": {
+    "hard_label": "NO"
+  },
+  "400443": {
+    "hard_label": "NO"
+  },
+  "400444": {
+    "hard_label": "DIRECT"
+  },
+  "400445": {
+    "hard_label": "DIRECT"
+  },
+  "400446": {
+    "hard_label": "NO"
+  },
+  "400447": {
+    "hard_label": "DIRECT"
+  },
+  "400448": {
+    "hard_label": "NO"
+  },
+  "400449": {
+    "hard_label": "NO"
+  },
+  "400450": {
+    "hard_label": "NO"
+  },
+  "400451": {
+    "hard_label": "NO"
+  },
+  "400452": {
+    "hard_label": "DIRECT"
+  },
+  "400453": {
+    "hard_label": "REPORTED"
+  },
+  "400455": {
+    "hard_label": "DIRECT"
+  },
+  "400456": {
+    "hard_label": "DIRECT"
+  },
+  "400457": {
+    "hard_label": "REPORTED"
+  },
+  "400458": {
+    "hard_label": "DIRECT"
+  },
+  "400459": {
+    "hard_label": "DIRECT"
+  },
+  "400460": {
+    "hard_label": "REPORTED"
+  },
+  "400461": {
+    "hard_label": "DIRECT"
+  },
+  "400462": {
+    "hard_label": "DIRECT"
+  },
+  "400463": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400464": {
+    "hard_label": "REPORTED"
+  },
+  "400466": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400467": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400468": {
+    "hard_label": "NO"
+  },
+  "400469": {
+    "hard_label": "JUDGEMENTAL"
+  },
+  "400471": {
+    "hard_label": "NO"
+  },
+  "400472": {
+    "hard_label": "NO"
+  },
+  "400473": {
+    "hard_label": "NO"
+  },
+  "400474": {
+    "hard_label": "NO"
+  },
+  "400475": {
+    "hard_label": "REPORTED"
+  },
+  "400476": {
+    "hard_label": "NO"
+  },
+  "400477": {
+    "hard_label": "NO"
+  },
+  "400478": {
+    "hard_label": "DIRECT"
+  },
+  "400479": {
+    "hard_label": "DIRECT"
+  },
+  "400480": {
+    "hard_label": "DIRECT"
+  },
+  "400481": {
+    "hard_label": "NO"
+  },
+  "400482": {
+    "hard_label": "DIRECT"
+  },
+  "400483": {
+    "hard_label": "NO"
+  },
+  "400484": {
+    "hard_label": "DIRECT"
+  },
+  "400485": {
+    "hard_label": "DIRECT"
+  },
+  "400486": {
+    "hard_label": "REPORTED"
+  },
+  "400487": {
+    "hard_label": "REPORTED"
+  },
+  "400488": {
+    "hard_label": "DIRECT"
+  },
+  "400489": {
+    "hard_label": "DIRECT"
+  }
+}

@@ -157,71 +157,35 @@ def cleanTweet(tweet):
 
     return clean_tweet, username_count, exclamation_count, question_count, possesive_username_count
 
-df = pd.read_json('./EXIST2023_training.json', encoding='utf8', orient = 'index')
-X_train = df['tweet'].to_list()
-X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in df['lang'].to_list()] # Change language labels to full name
-Y_train = ['YES' if labels.count('YES') > 3 else 'NO' for labels in df['labels_task1'].to_list()] # Label as sexism if 3 or more annotators label the tweet as sexism
-X_train_clean, X_train_username_counts, X_train_exclamation_counts, X_train_question_counts, X_train_possesive_username_counts = zip(*[cleanTweet(tweet) for tweet in X_train])
+training_data = pd.read_json('./EXIST_2023_Dataset/training/EXIST2023_training.json', encoding='utf8', orient = 'index')
+training_golds_soft = pd.read_json('./EXIST_2023_Dataset/evaluation/golds/EXIST2023_training_task1_gold_soft.json', encoding='utf8', orient = 'index')
+training_golds_hard = pd.read_json('./EXIST_2023_Dataset/evaluation/golds/EXIST2023_training_task1_gold_hard.json', encoding='utf8', orient = 'index')
 
-## Model will replace this section:
-#X_train_spanish = []
-#X_train_english = []
-#Y_train_spanish_majority = []
-#Y_train_english_majority = []
-#Y_train_spanish = []
-#Y_train_english = []
+X_train_ID = training_data['id_EXIST'].to_list()
+X_train_tweet = training_data['tweet'].to_list()
+X_train_lang = ['english' if lang == 'en' else 'spanish' for lang in training_data['lang'].to_list()] # Change language labels to full name
+X_train_clean_tweet, X_train_username_counts, X_train_exclamation_counts, X_train_question_counts, X_train_possesive_username_counts = zip(*[cleanTweet(tweet) for tweet in X_train_tweet])
+
+for tweet in X_train_clean_tweet:
+    print(tweet)
+
+#Y_train_soft = [[round(softs['YES'], 2), round(softs['NO'], 2)] for softs in training_golds_soft['soft_label'].to_list()]
+#Y_train_hard = [training_golds_hard['hard_label'].to_list()]
+#
+#train_spanish = []
+#train_english = []
 #
 #for i, lang in enumerate(X_train_lang):
 #    if lang == 'english':
-#        X_train_english.append(X_train_clean[i])
-#        Y_train_english_majority.append(Y_train[i])
-#        Y_train_english.append(df['labels_task1'].to_list()[i])
+#        train_english.append([X_train_ID[i], X_train_clean_tweet[i], Y_train_soft[i]])
 #    elif lang == 'spanish':
-#        X_train_spanish.append(X_train_clean[i])
-#        Y_train_spanish_majority.append(Y_train[i])
-#        Y_train_spanish.append(df['labels_task1'].to_list()[i])
+#        train_spanish.append([X_train_ID[i], X_train_clean_tweet[i], Y_train_soft[i]])
 #    else:
 #        print("Invalid language name in X_train_lang.")
 #        exit()
 #
-#with open('tokenizer_english.pkl', 'wb') as fd:
-#    pickle.dump(X_train_english, fd)
+#with open('train_english.pkl', 'wb') as fd:
+#    pickle.dump(train_english, fd)
 #
-#with open('tokenizer_spanish.pkl', 'wb') as fd:
-#    pickle.dump(X_train_spanish, fd)
-#
-#with open('tokenizer_english_labels_majority.pkl', 'wb') as fd:
-#    pickle.dump(Y_train_english_majority, fd)
-#
-#with open('tokenizer_spanish_labels_majority.pkl', 'wb') as fd:
-#    pickle.dump(Y_train_spanish_majority, fd)
-#
-#with open('tokenizer_english_labels.pkl', 'wb') as fd:
-#    pickle.dump(Y_train_english, fd)
-#
-#with open('tokenizer_spanish_labels.pkl', 'wb') as fd:
-#    pickle.dump(Y_train_spanish, fd)
-
-
-## %%
-## create TF-IDF vectorizer with n-grams
-#tfidf = TfidfVectorizer(ngram_range=(2, 2), analyzer='char')
-#
-## fit and transform the training data
-#X_train_tfidf = tfidf.fit_transform(X_train)
-#
-## transform the testing data using the same vectorizer
-#X_test_tfidf = tfidf.transform(X_test)
-#
-## %%
-## create SVM classifier and fit the training data
-#svm = SVC(kernel='rbf')
-#svm.fit(X_train_tfidf, Y_train)
-#
-## predict on the testing data and calculate accuracy
-#y_pred = svm.predict(X_test_tfidf)
-#accuracy = accuracy_score(Y_test, y_pred)
-#print('Accuracy:', accuracy*100)
-#
-## print classification report
-#print(classification_report(Y_test, y_pred))
+#with open('train_spanish.pkl', 'wb') as fd:
+#    pickle.dump(train_spanish, fd)
