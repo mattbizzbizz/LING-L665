@@ -1,12 +1,7 @@
 # %%
 import pandas as pd
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# from sklearn.model_selection import train_test_split
-# from sklearn.svm import SVC
-# from sklearn.metrics import accuracy_score, classification_report
 import re
 from nltk.tokenize import word_tokenize
-#from nltk.tokenize.casual import TweetTokenizer
 from TweetTokenizer_modified import TweetTokenizer
 
 import unicodedata
