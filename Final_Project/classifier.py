@@ -335,5 +335,23 @@ with open('./pkl/test_data_english.pkl', 'wb') as fd:
 with open('./pkl/test_data_spanish.pkl', 'wb') as fd:
     pickle.dump(test_data_spanish, fd)
 
+f = open('./hashtag_counter_sexist.txt', 'w')
 for key, value in global_counter.most_common():
-    print(key, value) 
+    f.write(str(key) + ' ' + str(value) + '\n') 
+f.close()
+
+f = open('./hashtag_counter_all.txt', 'w')
+hashtag_lst = []
+for lst in X_train_hashtag_lst:
+    for elem in lst:
+        hashtag_lst.append(elem)
+for lst in X_dev_hashtag_lst:
+    for elem in lst:
+        hashtag_lst.append(elem)
+for lst in X_test_hashtag_lst:
+    for elem in lst:
+        hashtag_lst.append(elem)
+counter = Counter(hashtag_lst)
+for key, value in counter.most_common():
+    f.write(str(key) + ' ' + str(value) + '\n')
+f.close()
