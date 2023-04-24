@@ -96,19 +96,19 @@ class Tokenize():
                 clean_tweet += chr(val)
             return clean_tweet
 
-#        def normalize_hashtags(tweet):
-#
-#            clean_tweet = ''
-#
-#            for word in tweet.split(' '):
-#                if word == '':
-#                    continue
-#                if word[0] == '#':
-#                    clean_tweet += ' ' + ' '.join(wordninja.split(word[1:]))
-#                else:
-#                    clean_tweet += ' ' + word
-#
-#            return clean_tweet
+        def normalize_hashtags(tweet):
+
+            clean_tweet = ''
+
+            for word in tweet.split(' '):
+                if word == '':
+                    continue
+                if word[0] == '#':
+                    clean_tweet += ' ' + ' '.join(lm.split(word[1:]))
+                else:
+                    clean_tweet += ' ' + word
+
+            return clean_tweet
         
         def cleanTweet(tweet):
 
@@ -147,7 +147,7 @@ class Tokenize():
             hashtag_regex = re.compile('#[\w]+')
             hashtag_lst = hashtag_regex.findall(clean_tweet)
 
-            #clean_tweet = normalize_hashtags(clean_tweet) # Parse hashtags
+            clean_tweet = normalize_hashtags(clean_tweet) # Parse hashtags
             clean_tweet = re.sub(r'#', '', clean_tweet) # Remove # symbols
 
             clean_tweet = re.sub(r'usernameidentificationtag', '<USERNAME>', clean_tweet) # Convert usernames to <USERNAME>
@@ -252,5 +252,6 @@ class Tokenize():
         counter = Counter(hashtag_lst)
         write_txt('./hashtag_counter_all.txt', counter, 'data/')
 
+lm = wordninja.LanguageModel('vocab.txt.gz')
 tokenize = Tokenize()
 tokenize.run()
